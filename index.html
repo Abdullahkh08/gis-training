@@ -225,32 +225,7 @@ tbody td:first-child{font-weight:700;color:var(--navy);background:#FAFBFC;border
 .dt-a.qg{background:var(--qg-bg);color:var(--qg);}
 .dt-a.both{background:var(--cream);color:#92740A;}
 
-/* ── GOLDEN RULE ── */
-.golden{
-  background:linear-gradient(135deg,#FFFBF0,#FFF8E1);
-  border:2px solid var(--gold);border-radius:var(--r);
-  padding:28px 32px;text-align:center;margin-bottom:24px;
-  position:relative;overflow:hidden;
-}
-.golden::before{content:'';position:absolute;inset:0;background:repeating-linear-gradient(45deg,transparent,transparent 15px,rgba(201,168,76,.04) 15px,rgba(201,168,76,.04) 16px);}
-.golden-in{position:relative;}
-.golden-in .gi{font-size:32px;margin-bottom:10px;display:block;}
-.golden h3{font-size:17px;font-weight:900;color:var(--navy);margin-bottom:8px;}
-.golden p{font-size:13px;color:var(--muted);line-height:1.85;max-width:560px;margin:0 auto;}
-
-/* ── EXERCISE BOX ── */
-.exercise{border-radius:var(--r);overflow:hidden;margin-bottom:20px;border:1px solid var(--gray2);}
-.ex-hdr{background:var(--navy);padding:13px 18px;display:flex;align-items:center;gap:10px;}
-.ex-hdr h4{font-size:13px;font-weight:700;color:#fff;}
-.ex-steps{background:#fff;}
-.step{display:flex;align-items:flex-start;gap:12px;padding:11px 18px;border-bottom:1px solid var(--gray2);transition:background .15s;}
-.step:last-child{border-bottom:none;}
-.step:hover{background:var(--gray);}
-.snum{width:24px;height:24px;border-radius:50%;background:var(--gold);color:#fff;font-size:11px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;}
-.step p{font-size:12.5px;color:var(--text);line-height:1.7;}
-.step code{background:#F1F5F9;color:#0F4C75;padding:2px 6px;border-radius:4px;font-size:11px;font-family:'Courier New',monospace;direction:ltr;display:inline-block;}
-
-/* ── INFO BOX ── */
+/* ── INFO BOXES ── */
 .info{border-radius:var(--r);padding:18px 22px;margin-bottom:18px;border-right:4px solid;}
 .info.gold{background:#FFFDF5;border-color:var(--gold);}
 .info.blue{background:#F0F6FF;border-color:var(--navy2);}
@@ -264,11 +239,22 @@ tbody td:first-child{font-weight:700;color:var(--navy);background:#FAFBFC;border
 .info.green ul li::before{color:var(--green);}
 .info.blue ul li::before{color:var(--navy2);}
 
-/* ── TIP ── */
+/* ── EXERCISE BOX ── */
+.exercise{border-radius:var(--r);overflow:hidden;margin-bottom:20px;border:1px solid var(--gray2);}
+.ex-hdr{background:var(--navy);padding:13px 18px;display:flex;align-items:center;gap:10px;}
+.ex-hdr h4{font-size:13px;font-weight:700;color:#fff;}
+.ex-steps{background:#fff;}
+.step{display:flex;align-items:flex-start;gap:12px;padding:11px 18px;border-bottom:1px solid var(--gray2);transition:background .15s;}
+.step:last-child{border-bottom:none;}
+.step:hover{background:var(--gray);}
+.snum{width:24px;height:24px;border-radius:50%;background:var(--gold);color:#fff;font-size:11px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;}
+.step p{font-size:12.5px;color:var(--text);line-height:1.7;}
+.step code{background:#F1F5F9;color:#0F4C75;padding:2px 6px;border-radius:4px;font-size:11px;font-family:'Courier New',monospace;direction:ltr;display:inline-block;}
+
+/* ── MISC ELEMENTS ── */
 .tip{background:var(--green-bg);border:1px solid #A7D4B8;border-radius:10px;padding:13px 16px;display:flex;gap:10px;align-items:flex-start;margin-bottom:18px;}
 .tip p{font-size:12.5px;color:#1F5C38;line-height:1.7;font-weight:500;}
 
-/* ── SCREENSHOT & SVG ── */
 .ss-wrap{border-radius:var(--r);overflow:hidden;margin-bottom:20px;border:1px solid var(--gray2);box-shadow:0 3px 14px rgba(0,0,0,.07);}
 .ss-bar{background:#2D3748;padding:9px 14px;display:flex;align-items:center;gap:7px;}
 .d{width:11px;height:11px;border-radius:50%;}
@@ -278,12 +264,10 @@ tbody td:first-child{font-weight:700;color:var(--navy);background:#FAFBFC;border
 .ss-wrap:hover .ss-img, .ss-wrap:hover svg {transform:scale(1.01);}
 .ss-cap{background:#F8FAFC;border-top:1px solid var(--gray2);padding:10px 14px;font-size:11.5px;color:var(--muted);text-align:center;}
 
-/* ── OVERLAY ── */
 .overlay{position:fixed;inset:0;background:rgba(0,0,0,.88);z-index:999;display:none;align-items:center;justify-content:center;cursor:zoom-out;padding:20px;}
 .overlay.show{display:flex;}
 #ov-content svg, #ov-content img { max-width: 90vw; max-height: 90vh; border-radius: 8px; box-shadow: 0 20px 60px rgba(0,0,0,.5); cursor: default; }
 
-/* ── PROGRESS ── */
 .prog-wrap{background:#fff;border-radius:var(--r);padding:22px;border:1px solid var(--gray2);margin-bottom:22px;}
 .prog-wrap h3{font-size:14px;font-weight:700;color:var(--navy);margin-bottom:18px;}
 .prog-item{margin-bottom:14px;}
@@ -293,14 +277,12 @@ tbody td:first-child{font-weight:700;color:var(--navy);background:#FAFBFC;border
 .prog-bar{height:7px;background:var(--gray2);border-radius:4px;overflow:hidden;}
 .prog-fill{height:100%;border-radius:4px;background:linear-gradient(90deg,var(--navy2),var(--gold));transition:width 1s ease;}
 
-/* ── EVAL TABLE BADGES ── */
 .badge{display:inline-block;padding:3px 9px;border-radius:20px;font-size:10px;font-weight:700;}
 .badge.req{background:#FEE2E2;color:#9B1C1C;}
 .badge.mid{background:#FEF9C3;color:#713F12;}
 .badge.opt{background:var(--green-bg);color:#14532D;}
 .badge.free{background:var(--green-bg);color:var(--green);}
 
-/* ── CERT ── */
 .cert{
   background:linear-gradient(135deg,#FFFBF0,#FFF8E1);
   border:2px solid var(--gold);border-radius:var(--r);
@@ -314,7 +296,6 @@ tbody td:first-child{font-weight:700;color:var(--navy);background:#FAFBFC;border
 .cert-div{width:70px;height:3px;background:var(--gold);margin:14px auto;border-radius:2px;}
 .cert-org{font-size:12px;font-weight:700;color:var(--gold);margin-top:10px;}
 
-/* ── CHECKLIST ── */
 .checklist{list-style:none;}
 .checklist li{
   display:flex;gap:10px;align-items:flex-start;
@@ -325,7 +306,6 @@ tbody td:first-child{font-weight:700;color:var(--navy);background:#FAFBFC;border
 .checklist li input{width:15px;height:15px;margin-top:2px;accent-color:var(--gold);flex-shrink:0;cursor:pointer;}
 .checklist li.done{text-decoration:line-through;color:var(--muted);}
 
-/* ── TIPS GRID ── */
 .tips-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:22px;}
 @media(max-width:580px){.tips-grid{grid-template-columns:1fr;}}
 .tip-card{background:#fff;border-radius:var(--r);border:1px solid var(--gray2);padding:18px;display:flex;gap:12px;align-items:flex-start;transition:box-shadow .2s;}
@@ -333,7 +313,6 @@ tbody td:first-child{font-weight:700;color:var(--navy);background:#FAFBFC;border
 .tip-card h4{font-size:12.5px;font-weight:700;color:var(--navy);margin-bottom:4px;}
 .tip-card p{font-size:12px;color:var(--muted);line-height:1.7;}
 
-/* ── CONCEPT CARDS (overview) ── */
 .concept-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-bottom:24px;}
 @media(max-width:600px){.concept-grid{grid-template-columns:1fr;}}
 .concept-card{background:#fff;border-radius:var(--r);border:1px solid var(--gray2);padding:20px;text-align:center;transition:transform .2s,box-shadow .2s;}
@@ -342,7 +321,6 @@ tbody td:first-child{font-weight:700;color:var(--navy);background:#FAFBFC;border
 .cc-val{font-size:20px;font-weight:900;color:var(--navy);}
 .cc-key{font-size:11px;color:var(--muted);margin-top:2px;}
 
-/* ── WORKFLOW FLOW ── */
 .flow{display:flex;align-items:center;flex-wrap:wrap;gap:0;justify-content:center;margin-bottom:24px;}
 .fn{background:#fff;border:1.5px solid var(--gray2);border-radius:12px;padding:12px 16px;text-align:center;min-width:110px;}
 .fn.ge{border-color:var(--ge);background:var(--ge-bg);}
@@ -353,7 +331,6 @@ tbody td:first-child{font-weight:700;color:var(--navy);background:#FAFBFC;border
 .fn.ge .fl{color:var(--ge);} .fn.qg .fl{color:var(--qg);}
 .farr{color:var(--gray2);font-size:20px;padding:0 6px;}
 
-/* ── OVERVIEW TIMELINE ── */
 .timeline{position:relative;padding-right:26px;}
 .timeline::before{content:'';position:absolute;right:9px;top:8px;bottom:8px;width:2px;background:linear-gradient(180deg,var(--gold),var(--navy2));border-radius:2px;}
 .tl-item{position:relative;margin-bottom:22px;}
@@ -362,7 +339,6 @@ tbody td:first-child{font-weight:700;color:var(--navy);background:#FAFBFC;border
 .tl-title{font-size:14px;font-weight:700;color:var(--navy);margin-bottom:3px;}
 .tl-desc{font-size:12.5px;color:var(--muted);line-height:1.6;}
 
-/* ── CALLOUT ── */
 .callout{
   background:var(--navy);border-radius:var(--r);
   padding:22px 26px;margin-bottom:20px;
@@ -371,8 +347,18 @@ tbody td:first-child{font-weight:700;color:var(--navy);background:#FAFBFC;border
 .callout .co-icon{font-size:24px;flex-shrink:0;}
 .callout h4{font-size:13px;font-weight:700;color:var(--gold2);margin-bottom:4px;}
 .callout p{font-size:12.5px;color:rgba(255,255,255,.65);line-height:1.7;}
+.golden{
+  background:linear-gradient(135deg,#FFFBF0,#FFF8E1);
+  border:2px solid var(--gold);border-radius:var(--r);
+  padding:28px 32px;text-align:center;margin-bottom:24px;
+  position:relative;overflow:hidden;
+}
+.golden::before{content:'';position:absolute;inset:0;background:repeating-linear-gradient(45deg,transparent,transparent 15px,rgba(201,168,76,.04) 15px,rgba(201,168,76,.04) 16px);}
+.golden-in{position:relative;}
+.golden-in .gi{font-size:32px;margin-bottom:10px;display:block;}
+.golden h3{font-size:17px;font-weight:900;color:var(--navy);margin-bottom:8px;}
+.golden p{font-size:13px;color:var(--muted);line-height:1.85;max-width:560px;margin:0 auto;}
 
-/* scrollbar */
 ::-webkit-scrollbar{width:5px;height:5px;}
 ::-webkit-scrollbar-track{background:var(--gray);}
 ::-webkit-scrollbar-thumb{background:var(--gray2);border-radius:3px;}
@@ -391,8 +377,8 @@ tbody td:first-child{font-weight:700;color:var(--navy);background:#FAFBFC;border
     <h1>منهج <span class="ge">GIS</span> الشامل<br>للمقيّم العقاري</h1>
     <p class="hero-sub">دليل تدريبي متكامل يشرح الفرق بين الأدوات ويُعلّمك توظيفها في عملك اليومي — من الصفر للاحترافية</p>
     <div class="hero-stats">
-      <div class="stat"><div class="stat-num">6</div><div class="stat-lbl">وحدات تدريبية</div></div>
-      <div class="stat"><div class="stat-num">3</div><div class="stat-lbl">أسابيع</div></div>
+      <div class="stat"><div class="stat-num">7</div><div class="stat-lbl">وحدات تدريبية</div></div>
+      <div class="stat"><div class="stat-num">4</div><div class="stat-lbl">أسابيع</div></div>
       <div class="stat"><div class="stat-num">2</div><div class="stat-lbl">أدوات مجانية</div></div>
       <div class="stat"><div class="stat-num">0</div><div class="stat-lbl">ريال تكلفة</div></div>
     </div>
@@ -416,15 +402,16 @@ tbody td:first-child{font-weight:700;color:var(--navy);background:#FAFBFC;border
     <div class="nav-item" onclick="show(3)"><div class="ni-icon">📦</div><div class="ni-label">الوحدة ١ — المقدمة</div><div class="ni-num">١</div></div>
     <div class="nav-item" onclick="show(4)"><div class="ni-icon">🌍</div><div class="ni-label">الوحدة ٢ — Google Earth</div><div class="ni-num">٢</div></div>
     <div class="nav-item" onclick="show(5)"><div class="ni-icon">📁</div><div class="ni-label">الوحدة ٣ — ملفات KMZ</div><div class="ni-num">٣</div></div>
-    <div class="nav-item" onclick="show(6)"><div class="ni-icon">🧩</div><div class="ni-label">الوحدة ٤ — QGIS</div><div class="ni-num">٤</div></div>
+    <div class="nav-item" onclick="show(6)"><div class="ni-icon">🧩</div><div class="ni-label">الوحدة ٤ — QGIS الأساسي</div><div class="ni-num">٤</div></div>
     <div class="nav-item" onclick="show(7)"><div class="ni-icon">📄</div><div class="ni-label">الوحدة ٥ — التقارير</div><div class="ni-num">٥</div></div>
     <div class="nav-item" onclick="show(8)"><div class="ni-icon">🎓</div><div class="ni-label">الوحدة ٦ — التمارين</div><div class="ni-num">٦</div></div>
+    <div class="nav-item" onclick="show(9)"><div class="ni-icon">🚀</div><div class="ni-label">الوحدة ٧ — التحليل المتقدم</div><div class="ni-num">٧</div></div>
   </div>
 
   <div class="nav-group">
     <div class="nav-group-label">الختام</div>
-    <div class="nav-item" onclick="show(9)"><div class="ni-icon">📌</div><div class="ni-label">مثال حقيقي — العُلا</div></div>
-    <div class="nav-item" onclick="show(10)"><div class="ni-icon">✅</div><div class="ni-label">التقييم والشهادة</div></div>
+    <div class="nav-item" onclick="show(10)"><div class="ni-icon">📌</div><div class="ni-label">مثال حقيقي — العُلا</div></div>
+    <div class="nav-item" onclick="show(11)"><div class="ni-icon">✅</div><div class="ni-label">التقييم والشهادة</div></div>
   </div>
 </div>
 
@@ -433,13 +420,13 @@ tbody td:first-child{font-weight:700;color:var(--navy);background:#FAFBFC;border
 <div class="section active" id="s0">
   <div class="sec-hdr">
     <div class="sec-hdr-row"><div class="sec-num">🗂️</div><h2>نظرة عامة على المنهج</h2></div>
-    <div class="sec-chips"><div class="chip">3 أسابيع</div><div class="chip">6 وحدات</div><div class="chip">12 ساعة</div></div>
+    <div class="sec-chips"><div class="chip">4 أسابيع</div><div class="chip">7 وحدات</div><div class="chip">15 ساعة</div></div>
   </div>
 
   <div class="concept-grid">
     <div class="concept-card"><div class="cc-icon">🌍</div><div class="cc-val">Google Earth</div><div class="cc-key">استكشاف ورؤية سريعة</div></div>
     <div class="concept-card"><div class="cc-icon">🧩</div><div class="cc-val">QGIS</div><div class="cc-key">تحليل وتقارير احترافية</div></div>
-    <div class="concept-card"><div class="cc-icon">📁</div><div class="cc-val">KMZ / SHP</div><div class="cc-key">صيغ الملفات الجغرافية</div></div>
+    <div class="concept-card"><div class="cc-icon">📊</div><div class="cc-val">Advanced GIS</div><div class="cc-key">دعم قرارات التقييم</div></div>
   </div>
 
   <div class="stitle"><div class="sdot"></div>الجدول الزمني</div>
@@ -459,34 +446,11 @@ tbody td:first-child{font-weight:700;color:var(--navy);background:#FAFBFC;border
       <div class="tl-title">الوحدة ٥ + ٦ — التقارير والمشروع النهائي</div>
       <div class="tl-desc">ربط GIS بتقارير التقييم، خريطة موقع احترافية، مشروع التخرج</div>
     </div>
-  </div>
-
-  <div class="stitle"><div class="sdot"></div>سير العمل النموذجي للمقيّم</div>
-  <div class="flow">
-    <div class="fn start"><div class="fe">📋</div><div class="fl">طلب تقييم</div></div>
-    <div class="farr">→</div>
-    <div class="fn ge"><div class="fe">🌍</div><div class="fl">Google Earth<br>معاينة أولية</div></div>
-    <div class="farr">→</div>
-    <div class="fn"><div class="fe">📁</div><div class="fl">استلام<br>KMZ / SHP</div></div>
-    <div class="farr">→</div>
-    <div class="fn qg"><div class="fe">🧩</div><div class="fl">QGIS<br>تحليل دقيق</div></div>
-    <div class="farr">→</div>
-    <div class="fn start"><div class="fe">📄</div><div class="fl">تقرير<br>التقييم</div></div>
-  </div>
-
-  <div class="stitle"><div class="sdot"></div>الجدول التفصيلي</div>
-  <div class="tbl-wrap">
-    <table>
-      <thead><tr><th>الأسبوع</th><th>الوحدة</th><th>الموضوع</th><th>الوقت</th><th>الأداة</th></tr></thead>
-      <tbody>
-        <tr><td>١</td><td>الأولى</td><td>مقدمة GIS وتثبيت البرامج</td><td>1.5 ساعة</td><td>Google Earth Pro</td></tr>
-        <tr><td>١</td><td>الثانية</td><td>Google Earth Pro للتقييم</td><td>2 ساعة</td><td>Google Earth Pro</td></tr>
-        <tr><td>٢</td><td>الثالثة</td><td>التعامل مع ملفات KMZ/KML</td><td>2 ساعة</td><td>Google Earth Pro</td></tr>
-        <tr><td>٢</td><td>الرابعة</td><td>مقدمة QGIS للمستخدم العقاري</td><td>2.5 ساعة</td><td>QGIS</td></tr>
-        <tr><td>٣</td><td>الخامسة</td><td>ربط GIS بتقارير التقييم</td><td>2 ساعة</td><td>كلا البرنامجين</td></tr>
-        <tr><td>٣</td><td>السادسة</td><td>تمارين ومشروع التخرج</td><td>2 ساعة</td><td>كلا البرنامجين</td></tr>
-      </tbody>
-    </table>
+    <div class="tl-item"><div class="tl-dot"></div>
+      <div class="tl-week">الأسبوع الرابع</div>
+      <div class="tl-title">الوحدة ٧ — التحليل المكاني المتقدم</div>
+      <div class="tl-desc">الخرائط الحرارية، تحليل النطاقات (Buffer)، سحب البيانات (OSM)، وتقاطع الطبقات التنظيمية</div>
+    </div>
   </div>
 </div>
 
@@ -495,90 +459,17 @@ tbody td:first-child{font-weight:700;color:var(--navy);background:#FAFBFC;border
     <div class="sec-hdr-row"><div class="sec-num">⚖️</div><h2>المقارنة الشاملة بين الأداتين</h2></div>
     <div class="sec-chips"><div class="chip ge">Google Earth</div><div class="chip qg">QGIS</div></div>
   </div>
-
   <p class="prose">قبل أن تختار أيهما، افهم أن كل برنامج صُمِّم لغرض مختلف وشريحة مستخدمين مختلفة. معرفة الفرق الجوهري بينهما ستوفر عليك وقتاً وتعطيك نتائج أدق.</p>
-
   <div class="analogy">
-    <div class="an-ge">
-      <div class="an-label">Google Earth Pro</div>
-      <span class="an-emoji">🔭</span>
-      <div class="an-title">المنظار</div>
-      <div class="an-desc">أداة استكشاف بصري سريع. تفتحها في ثوانٍ وترى أي موقع في العالم. مصممة لأي شخص بدون تدريب.</div>
-    </div>
+    <div class="an-ge"><div class="an-label">Google Earth Pro</div><span class="an-emoji">🔭</span><div class="an-title">المنظار</div><div class="an-desc">أداة استكشاف بصري سريع. تفتحها في ثوانٍ وترى أي موقع في العالم.</div></div>
     <div class="an-vs">VS</div>
-    <div class="an-qg">
-      <div class="an-label">QGIS</div>
-      <span class="an-emoji">🔬</span>
-      <div class="an-title">المختبر</div>
-      <div class="an-desc">أداة تحليل علمي دقيق. تحتاج وقتاً للتعلم، لكنها تعطيك إجابات لا يستطيع المنظار إعطاءها أبداً.</div>
-    </div>
+    <div class="an-qg"><div class="an-label">QGIS</div><span class="an-emoji">🔬</span><div class="an-title">المختبر</div><div class="an-desc">أداة تحليل علمي دقيق. تحتاج وقتاً للتعلم، لكنها تعطيك إجابات لا يستطيع المنظار إعطاءها.</div></div>
   </div>
-
-  <div class="tc-grid">
-    <div class="tc-card ge">
-      <div class="tc-head">
-        <div class="tc-logo">🌍</div>
-        <h3>Google Earth Pro</h3>
-        <p>متصفح جغرافي ذكي، مجاني منذ 2015. مصمم للعموم ويعمل بشكل فوري دون أي إعداد مسبق.</p>
-      </div>
-      <div class="tc-body">
-        <ul class="feat-list">
-          <li><div class="fdot"></div>صور جوية عالية الدقة محدّثة باستمرار</li>
-          <li><div class="fdot"></div>واجهة بصرية لا تحتاج تدريباً — تفتحه وتبدأ فوراً</li>
-          <li><div class="fdot"></div>فتح ملفات KMZ/KML بسحب وإفلات مباشر</li>
-          <li><div class="fdot"></div>قياس المسافات والمساحات بضغطة واحدة</li>
-          <li><div class="fdot"></div>ميزة الصور التاريخية — شاهد المنطقة قبل 30 سنة</li>
-          <li><div class="fdot"></div>تصدير صورة موقع جاهزة للتقرير</li>
-          <li><div class="fdot"></div>يعمل على الجوال والحاسوب والمتصفح</li>
-        </ul>
-      </div>
-    </div>
-    <div class="tc-card qg">
-      <div class="tc-head">
-        <div class="tc-logo">🧩</div>
-        <h3>QGIS</h3>
-        <p>نظام GIS مفتوح المصدر احترافي منذ 2002. تستخدمه الحكومات والشركات الكبرى لأعمق التحليلات.</p>
-      </div>
-      <div class="tc-body">
-        <ul class="feat-list">
-          <li><div class="fdot"></div>يفتح جميع الصيغ: SHP, GeoJSON, KMZ, CSV...</li>
-          <li><div class="fdot"></div>طبقات متعددة غير محدودة في نفس الوقت</li>
-          <li><div class="fdot"></div>ربط قواعد البيانات وجداول Excel بالخريطة</li>
-          <li><div class="fdot"></div>إنتاج خرائط احترافية بمقياس رسم وإحداثيات وعنوان</li>
-          <li><div class="fdot"></div>حسابات مساحية دقيقة جداً بالمتر المربع</li>
-          <li><div class="fdot"></div>يعمل كاملاً بدون إنترنت</li>
-          <li><div class="fdot"></div>آلاف الإضافات المتخصصة مجاناً</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-
-  <div class="stitle"><div class="sdot"></div>مقارنة وجهاً لوجه — المحاور الأساسية</div>
-  <div class="tbl-wrap">
-    <table>
-      <thead><tr><th>المحور</th><th class="ge-col">🌍 Google Earth</th><th class="qg-col">🧩 QGIS</th></tr></thead>
-      <tbody>
-        <tr><td>سهولة الاستخدام</td><td>⭐⭐⭐⭐⭐  فوري تماماً</td><td>⭐⭐⭐  يحتاج تعلم 5-10 ساعات</td></tr>
-        <tr><td>فتح KMZ/KML</td><td><span class="ck">✔</span> بسحب وإفلات</td><td><span class="ck">✔</span> ويفصل الطبقات</td></tr>
-        <tr><td>فتح Shapefile (.shp)</td><td><span class="cx">✗</span> لا يدعمه</td><td><span class="ck">✔</span> الأفضل في ذلك</td></tr>
-        <tr><td>الصور الجوية</td><td><span class="ck">✔</span> Google نفسها — أفضل جودة</td><td><span class="cp">⚠ إضافة خارجية</span></td></tr>
-        <tr><td>الصور التاريخية</td><td><span class="ck">✔</span> حتى 30 سنة مضت</td><td><span class="cx">✗</span> غير متاح مباشرة</td></tr>
-        <tr><td>قياس المساحات</td><td><span class="ck">✔</span> سريع وبصري (دقة ~97%)</td><td><span class="ck">✔</span> أدق رياضياً</td></tr>
-        <tr><td>طبقات متعددة</td><td><span class="cp">⚠ محدودة</span></td><td><span class="ck">✔</span> غير محدودة</td></tr>
-        <tr><td>ربط Excel بالخريطة</td><td><span class="cx">✗</span></td><td><span class="ck">✔</span> مباشر</td></tr>
-        <tr><td>تقارير خرائطية احترافية</td><td><span class="cp">⚠ صورة فقط</span></td><td><span class="ck">✔</span> PDF كامل + مقياس رسم</td></tr>
-        <tr><td>يعمل بدون إنترنت</td><td><span class="cp">⚠ جزئياً</span></td><td><span class="ck">✔</span> كاملاً</td></tr>
-        <tr><td>وقت الإتقان</td><td>30 دقيقة</td><td>5-10 ساعات تدريب</td></tr>
-        <tr><td>التكلفة</td><td>مجاني ✔</td><td>مجاني ✔</td></tr>
-      </tbody>
-    </table>
-  </div>
-
   <div class="golden">
     <div class="golden-in">
       <span class="gi">🏆</span>
       <h3>القاعدة الذهبية</h3>
-      <p>الأداتان <strong>تكمّلان بعضهما ولا تتنافسان</strong>. ابدأ دائماً بـ Google Earth للاستكشاف السريع، ثم انتقل لـ QGIS حين تحتاج تحليلاً أعمق أو ملفات رسمية أو تقريراً خرائطياً. المقيّم المحترف يستخدم كلتيهما في نفس المشروع.</p>
+      <p>الأداتان <strong>تكمّلان بعضهما ولا تتنافسان</strong>. ابدأ دائماً بـ Google Earth للاستكشاف السريع، ثم انتقل لـ QGIS حين تحتاج تحليلاً أعمق أو ملفات رسمية أو تقريراً خرائطياً.</p>
     </div>
   </div>
 </div>
@@ -586,370 +477,50 @@ tbody td:first-child{font-weight:700;color:var(--navy);background:#FAFBFC;border
 <div class="section" id="s2">
   <div class="sec-hdr">
     <div class="sec-hdr-row"><div class="sec-num">🧭</div><h2>متى تستخدم كل منهما؟</h2></div>
-    <div class="sec-chips"><div class="chip">دليل القرار</div><div class="chip">سيناريوهات واقعية</div></div>
   </div>
-
-  <p class="prose">القاعدة البسيطة: <strong>إذا تحتاج تشوف — Google Earth. إذا تحتاج تحلل أو توثّق رسمياً — QGIS.</strong> فيما يلي دليل أكثر تفصيلاً.</p>
-
-  <div class="when-grid">
-    <div class="when-card ge">
-      <div class="when-hdr"><span style="font-size:22px">🌍</span><h3>استخدم Google Earth عندما...</h3></div>
-      <div class="when-body">
-        <div class="wi"><span class="wi-tag">⚡ سريع</span>تريد رؤية الموقع فوراً قبل الزيارة الميدانية</div>
-        <div class="wi"><span class="wi-tag">📸 صورة</span>تحتاج صورة جوية سريعة لإرفاقها بالتقرير</div>
-        <div class="wi"><span class="wi-tag">📏 قياس</span>تريد تقدير سريع للمساحة أو المسافة خلال مكالمة</div>
-        <div class="wi"><span class="wi-tag">📂 KMZ</span>وصلك ملف KMZ وتريد فتحه فوراً</div>
-        <div class="wi"><span class="wi-tag">🕐 تاريخي</span>تريد مقارنة حالة العقار قبل سنوات</div>
-        <div class="wi"><span class="wi-tag">📍 بحث</span>تبحث عن عنوان أو إحداثيات غير واضحة</div>
-        <div class="wi"><span class="wi-tag">🏗️ محيط</span>تريد رؤية المنطقة والمرافق بصرياً</div>
-      </div>
-    </div>
-    <div class="when-card qg">
-      <div class="when-hdr"><span style="font-size:22px">🧩</span><h3>استخدم QGIS عندما...</h3></div>
-      <div class="when-body">
-        <div class="wi"><span class="wi-tag">📁 SHP</span>وصلك Shapefile من البلدية أو صحاري</div>
-        <div class="wi"><span class="wi-tag">🗂️ طبقات</span>تريد مقارنة عدة عقارات على خريطة واحدة</div>
-        <div class="wi"><span class="wi-tag">🖨️ تقرير</span>تريد خريطة احترافية بمقياس رسم رسمي</div>
-        <div class="wi"><span class="wi-tag">📊 بيانات</span>تريد ربط أرقام من Excel بالخريطة</div>
-        <div class="wi"><span class="wi-tag">📐 دقة</span>تحتاج حسابات مساحية دقيقة للتقرير الرسمي</div>
-        <div class="wi"><span class="wi-tag">🔍 تحليل</span>تريد كل العقارات ضمن نطاق 500 متر</div>
-        <div class="wi"><span class="wi-tag">📶 أوفلاين</span>تعمل في موقع بدون إنترنت</div>
-      </div>
-    </div>
-  </div>
-
-  <div class="stitle"><div class="sdot"></div>سيناريوهات حقيقية من التقييم العقاري</div>
-  <div class="scenarios">
-    <div class="scenario"><div class="sc-icon">📋</div><div class="sc-body"><h4>وصلك طلب تقييم أرض سكنية — تريد معاينة الموقع قبل الزيارة</h4><p>تريد فهم طبيعة الحي والمرافق والشارع المطل. لا تحتاج تحليلاً — فقط رؤية بصرية.</p></div><div class="sc-v ge">Google Earth</div></div>
-    <div class="scenario"><div class="sc-icon">📁</div><div class="sc-body"><h4>أمانة الرياض أرسلت ملف Shapefile لحدود المخطط الرسمي</h4><p>Google Earth لا يفتح هذه الصيغة إطلاقاً. QGIS هو الخيار الوحيد.</p></div><div class="sc-v qg">QGIS فقط</div></div>
-    <div class="scenario"><div class="sc-icon">📸</div><div class="sc-body"><h4>تريد إرفاق صورة جوية سريعة في تقرير التقييم</h4><p>تحتاج صورة بجودة جيدة بسرعة. Google Earth أسرع وأسهل لهذا الغرض.</p></div><div class="sc-v ge">Google Earth</div></div>
-    <div class="scenario"><div class="sc-icon">🗺️</div><div class="sc-body"><h4>العميل يريد خريطة رسمية بمقياس رسم وشبكة إحداثيات وعنوان</h4><p>هذا مستوى احترافية لا تستطيع Google Earth توفيره — يحتاج Print Layout في QGIS.</p></div><div class="sc-v qg">QGIS</div></div>
-    <div class="scenario"><div class="sc-icon">⏳</div><div class="sc-body"><h4>تريد معرفة كيف كانت المنطقة قبل 10 سنوات قبل التطوير</h4><p>ميزة الصور التاريخية حصرية في Google Earth — تعطيك تاريخ المنطقة بضغطة واحدة.</p></div><div class="sc-v ge">Google Earth</div></div>
-    <div class="scenario"><div class="sc-icon">📊</div><div class="sc-body"><h4>لديك Excel بـ 30 عقاراً مع إحداثياتها — تريد عرضها على خريطة</h4><p>QGIS يستورد Excel مباشرة ويحوله لنقاط على الخريطة — لا يمكن لـ Google Earth فعل ذلك.</p></div><div class="sc-v qg">QGIS</div></div>
-    <div class="scenario"><div class="sc-icon">🏘️</div><div class="sc-body"><h4>مشروع تقييم جماعي لـ 15 قطعة في نفس المخطط</h4><p>ابدأ بـ Google Earth للمعاينة الأولية، ثم انتقل لـ QGIS للتحليل المقارن والتقرير النهائي.</p></div><div class="sc-v both">كلاهما</div></div>
-  </div>
-
-  <div class="stitle"><div class="sdot"></div>دليل القرار السريع</div>
+  <p class="prose">القاعدة البسيطة: <strong>إذا تحتاج تشوف — Google Earth. إذا تحتاج تحلل أو توثّق رسمياً — QGIS.</strong></p>
   <div class="dt">
     <h3>⚡ سؤالان يحددان أداتك</h3>
     <div class="dt-row"><div class="dt-q">هل الملف بصيغة Shapefile أو GeoJSON؟</div><div class="dt-arr">←</div><div class="dt-a qg">QGIS فقط</div></div>
     <div class="dt-row"><div class="dt-q">هل تحتاج النتيجة خلال دقيقتين؟</div><div class="dt-arr">←</div><div class="dt-a ge">Google Earth</div></div>
     <div class="dt-row"><div class="dt-q">هل تقارن أكثر من عقار على نفس الخريطة؟</div><div class="dt-arr">←</div><div class="dt-a qg">QGIS</div></div>
-    <div class="dt-row"><div class="dt-q">هل تريد صورة جوية سريعة للتقرير؟</div><div class="dt-arr">←</div><div class="dt-a ge">Google Earth</div></div>
     <div class="dt-row"><div class="dt-q">هل تريد خريطة رسمية بمقياس رسم وإحداثيات؟</div><div class="dt-arr">←</div><div class="dt-a qg">QGIS</div></div>
-    <div class="dt-row"><div class="dt-q">هل تريد مشاهدة المنطقة في تواريخ سابقة؟</div><div class="dt-arr">←</div><div class="dt-a ge">Google Earth</div></div>
-    <div class="dt-row"><div class="dt-q">هل تعمل بدون إنترنت في الموقع؟</div><div class="dt-arr">←</div><div class="dt-a qg">QGIS</div></div>
   </div>
 </div>
 
 <div class="section" id="s3">
-  <div class="sec-hdr">
-    <div class="sec-hdr-row"><div class="sec-num">١</div><h2>المقدمة في GIS وأدوات العمل</h2></div>
-    <div class="sec-chips"><div class="chip">⏱ 1.5 ساعة</div><div class="chip">📅 الأسبوع الأول</div></div>
-  </div>
-
-  <div class="stitle"><div class="sdot"></div>ما هو GIS ولماذا يحتاجه المقيّم؟</div>
-  <p class="prose">نظام المعلومات الجغرافية (Geographic Information Systems) هو منظومة متكاملة تربط <strong>البيانات بالمواقع الجغرافية</strong>. بمعنى أبسط: هو القدرة على رؤية أي معلومة على الخريطة بدلاً من الجدول.</p>
-  <p class="prose">بالنسبة للمقيّم العقاري، هذا يعني القدرة على التحقق من مساحة الأرض، تحديد موقعها بدقة، قياس المسافات للمرافق، ومقارنتها بالعقارات المجاورة — كل ذلك قبل حتى الذهاب للموقع.</p>
-
-  <div class="callout">
-    <div class="co-icon">💡</div>
-    <div>
-      <h4>مثال حقيقي من التقييم</h4>
-      <p>مقيّم يتلقى طلباً لتقييم أرض في حي النرجس بالرياض. قبل GIS: يذهب للموقع، يقيس بنفسه، يرسم الحدود يدوياً. مع GIS: يفتح الملف، يرى الحدود فوراً، يقيس المساحة في 30 ثانية، ويصدر صورة الموقع للتقرير قبل مغادرة مكتبه.</p>
-    </div>
-  </div>
-
-  <div class="stitle"><div class="sdot"></div>المفاهيم الأساسية التي يجب معرفتها</div>
+  <div class="sec-hdr"><div class="sec-hdr-row"><div class="sec-num">١</div><h2>المقدمة في GIS وأدوات العمل</h2></div></div>
+  <p class="prose">نظام المعلومات الجغرافية يربط البيانات بالمواقع، مما يسمح لك بالتحقق من مساحة الأرض وموقعها قبل الزيارة الميدانية.</p>
+  <div class="stitle"><div class="sdot"></div>الإحداثيات الجغرافية</div>
   <div class="tbl-wrap">
     <table>
-      <thead><tr><th>المصطلح</th><th>التعريف البسيط</th><th>مثال عملي</th></tr></thead>
+      <thead><tr><th>الصيغة</th><th>مثال</th><th>في تقارير التقييم</th></tr></thead>
       <tbody>
-        <tr><td>إحداثيات (Coordinates)</td><td>رقمان يحددان موقعاً دقيقاً على الأرض</td><td>24.7136° N, 46.6753° E = موقع في الرياض</td></tr>
-        <tr><td>طبقة (Layer)</td><td>مجموعة بيانات جغرافية متجانسة</td><td>طبقة الطرق، طبقة قطع الأراضي، طبقة المباني</td></tr>
-        <tr><td>نظام الإسقاط (CRS)</td><td>طريقة تحويل كرة الأرض لخريطة مسطحة</td><td>WGS84 هو الأكثر شيوعاً في السعودية</td></tr>
-        <tr><td>خط العرض (Latitude)</td><td>الموقع شمالاً أو جنوباً من خط الاستواء</td><td>الرياض: 24.7° شمال</td></tr>
-        <tr><td>خط الطول (Longitude)</td><td>الموقع شرقاً أو غرباً من خط جرينيتش</td><td>الرياض: 46.7° شرق</td></tr>
-        <tr><td>Vector Data</td><td>بيانات تمثل الأشكال (نقاط، خطوط، مضلعات)</td><td>حدود الأرض = مضلع، الطريق = خط</td></tr>
+        <tr><td><strong>DD (درجات عشرية)</strong></td><td><code>26.626849, 37.912589</code></td><td>✓ <strong>استخدمها دائماً</strong></td></tr>
+        <tr><td><strong>DMS (درجات/دقائق/ثوانٍ)</strong></td><td><code>26°37'36"N, 37°54'45"E</code></td><td>حوّلها لـ DD قبل الإدراج</td></tr>
       </tbody>
     </table>
   </div>
-
-  <div class="stitle"><div class="sdot"></div>الأدوات المستخدمة وكيفية الحصول عليها</div>
-  <div class="tbl-wrap">
-    <table>
-      <thead><tr><th>البرنامج</th><th>الاستخدام</th><th>التكلفة</th><th>رابط التحميل</th></tr></thead>
-      <tbody>
-        <tr><td><strong>Google Earth Pro</strong></td><td>استكشاف، قياس، صور جوية، KMZ</td><td><span class="badge free">مجاني</span></td><td>earth.google.com/download</td></tr>
-        <tr><td><strong>QGIS</strong></td><td>تحليل، طبقات، تقارير، Shapefile</td><td><span class="badge free">مجاني</span></td><td>qgis.org/download</td></tr>
-        <tr><td><strong>MyGeodata Converter</strong></td><td>تحويل الصيغ بين KMZ, SHP, GeoJSON</td><td><span class="badge free">مجاني</span></td><td>mygeodata.cloud/converter</td></tr>
-      </tbody>
-    </table>
-  </div>
-
-  <div class="stitle"><div class="sdot"></div>الإحداثيات الجغرافية — دليل شامل</div>
-  <p class="prose">الإحداثيات الجغرافية هي نظام عالمي لتحديد أي موقع على سطح الأرض برقمين فقط. تماماً كما يحدد رقم الشارع ورقم المبنى عنواناً في المدينة — يحدد خط العرض وخط الطول أي نقطة على الكرة الأرضية بدقة كاملة.</p>
-
-  <div class="ss-wrap">
-    <div class="ss-bar"><div class="d r"></div><div class="d y"></div><div class="d g"></div><div class="ss-lbl">خط العرض وخط الطول — كيف يعملان</div></div>
-    <svg onclick="openOv(this)" viewBox="0 0 860 400" xmlns="http://www.w3.org/2000/svg">
-  <defs><linearGradient id="gbg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#0E1E35"/><stop offset="100%" stop-color="#1B3A5C"/></linearGradient></defs>
-  <rect width="860" height="400" fill="url(#gbg)"/>
-  <g stroke="rgba(255,255,255,0.07)" stroke-width="1">
-    <line x1="0" y1="80" x2="860" y2="80"/><line x1="0" y1="160" x2="860" y2="160"/>
-    <line x1="0" y1="200" x2="860" y2="200"/><line x1="0" y1="240" x2="860" y2="240"/>
-    <line x1="0" y1="320" x2="860" y2="320"/>
-    <line x1="86" y1="0" x2="86" y2="400"/><line x1="258" y1="0" x2="258" y2="400"/>
-    <line x1="430" y1="0" x2="430" y2="400"/><line x1="602" y1="0" x2="602" y2="400"/>
-    <line x1="774" y1="0" x2="774" y2="400"/>
-  </g>
-  <line x1="0" y1="200" x2="860" y2="200" stroke="rgba(201,168,76,0.5)" stroke-width="2"/>
-  <text x="8" y="196" fill="#C9A84C" font-size="10" font-family="Arial">خط الاستواء 0°</text>
-  <line x1="430" y1="0" x2="430" y2="400" stroke="rgba(201,168,76,0.4)" stroke-width="2"/>
-  <text x="432" y="14" fill="#C9A84C" font-size="10" font-family="Arial">جرينيتش 0°</text>
-  <text x="8" y="76" fill="rgba(255,255,255,0.35)" font-size="9" font-family="Arial">+45°N</text>
-  <text x="8" y="156" fill="rgba(255,255,255,0.35)" font-size="9" font-family="Arial">+23.5°N</text>
-  <text x="8" y="236" fill="rgba(255,255,255,0.35)" font-size="9" font-family="Arial">-23.5°S</text>
-  <text x="8" y="316" fill="rgba(255,255,255,0.35)" font-size="9" font-family="Arial">-45°S</text>
-  <text x="250" y="395" fill="rgba(255,255,255,0.35)" font-size="9" font-family="Arial">-45°W</text>
-  <text x="596" y="395" fill="rgba(255,255,255,0.35)" font-size="9" font-family="Arial">+45°E</text>
-  <polygon points="580,148 620,142 650,150 670,165 680,185 675,210 660,225 645,238 620,245 598,240 575,228 558,210 555,190 560,168" fill="rgba(201,168,76,0.2)" stroke="#C9A84C" stroke-width="1.5"/>
-  <circle cx="602" cy="182" r="9" fill="#fc5c65" opacity="0.9"/>
-  <circle cx="602" cy="182" r="16" fill="none" stroke="#fc5c65" stroke-width="1.5" opacity="0.4"/>
-  <line x1="0" y1="182" x2="602" y2="182" stroke="#1A73E8" stroke-width="2" stroke-dasharray="7,4" opacity="0.85"/>
-  <line x1="602" y1="0" x2="602" y2="400" stroke="#589632" stroke-width="2" stroke-dasharray="7,4" opacity="0.85"/>
-  <rect x="8" y="171" width="135" height="22" rx="4" fill="#1A73E8" opacity="0.95"/>
-  <text x="14" y="185" fill="#fff" font-size="11" font-family="Arial" font-weight="bold">خط العرض: 26.63°N ↔</text>
-  <rect x="558" y="6" width="140" height="22" rx="4" fill="#589632" opacity="0.95"/>
-  <text x="564" y="20" fill="#fff" font-size="11" font-family="Arial" font-weight="bold">خط الطول: 37.91°E ↕</text>
-  <rect x="672" y="138" width="178" height="118" rx="7" fill="rgba(14,30,53,0.96)" stroke="#C9A84C" stroke-width="1.5"/>
-  <text x="761" y="158" fill="#C9A84C" font-size="12" font-weight="bold" text-anchor="middle" font-family="Arial">العُلا — المدينة المنورة</text>
-  <text x="680" y="180" fill="#7ec8ff" font-size="10" font-family="Arial">خط العرض (Lat):</text>
-  <text x="680" y="198" fill="#fff" font-size="13" font-weight="bold" font-family="monospace">26.626849° N</text>
-  <text x="680" y="220" fill="#7ec8ff" font-size="10" font-family="Arial">خط الطول (Long):</text>
-  <text x="680" y="238" fill="#fff" font-size="13" font-weight="bold" font-family="monospace">37.912589° E</text>
-  <rect x="30" y="340" width="320" height="50" rx="6" fill="rgba(0,0,0,0.5)"/>
-  <text x="45" y="358" fill="#1A73E8" font-size="11" font-family="Arial" font-weight="bold">← خط العرض يقيس الشمال والجنوب</text>
-  <text x="45" y="378" fill="#589632" font-size="11" font-family="Arial" font-weight="bold">↕ خط الطول يقيس الشرق والغرب</text>
-</svg>
-    <div class="ss-cap">خط العرض (أزرق) يقيس البُعد شمالاً/جنوباً عن خط الاستواء — خط الطول (أخضر) يقيس البُعد شرقاً/غرباً عن جرينيتش — نقطة تقاطعهما تحدد الموقع بدقة</div>
-  </div>
-
-  <div class="callout">
-    <div class="co-icon">📐</div>
-    <div>
-      <h4>خط العرض وخط الطول — بشكل بسيط</h4>
-      <p><strong>خط العرض (Latitude)</strong> يشبه الطوابق في بناية — يقيس كم أنت بعيد شمالاً أو جنوباً. يتراوح من 90- جنوب إلى 90+ شمال. <strong>الرياض: 24.7°N | العُلا: 26.6°N</strong><br><br>
-      <strong>خط الطول (Longitude)</strong> يشبه أرقام الشوارع — يقيس كم أنت بعيد شرقاً أو غرباً عن لندن. يتراوح من 180- غرب إلى 180+ شرق. <strong>الرياض: 46.7°E | العُلا: 37.9°E</strong><br><br>
-      قاعدة سهلة للحفظ: <strong>اللات للشمال (Latitude = North/South) واللونج للشرق (Longitude = East/West)</strong></p>
-    </div>
-  </div>
-
-  <div class="ss-wrap">
-    <div class="ss-bar"><div class="d r"></div><div class="d y"></div><div class="d g"></div><div class="ss-lbl">ثلاث صيغ للإحداثيات — نفس الموقع</div></div>
-    <svg onclick="openOv(this)" viewBox="0 0 860 295" xmlns="http://www.w3.org/2000/svg">
-  <rect width="860" height="295" fill="#0E1E35"/>
-  <text x="430" y="28" fill="#C9A84C" font-size="13" font-weight="bold" text-anchor="middle" font-family="Arial">نفس الموقع (العُلا) بثلاث صيغ مختلفة للإحداثيات</text>
-  <rect x="15" y="44" width="258" height="230" rx="10" fill="#1B3A5C" stroke="#1A73E8" stroke-width="2"/>
-  <rect x="15" y="44" width="258" height="38" rx="10" fill="#1A73E8"/>
-  <text x="144" y="60" fill="#fff" font-size="12" font-weight="bold" text-anchor="middle" font-family="Arial">الدرجات العشرية (DD)</text>
-  <text x="144" y="76" fill="rgba(255,255,255,0.65)" font-size="9" text-anchor="middle" font-family="Arial">Decimal Degrees</text>
-  <text x="144" y="108" fill="#7ec8ff" font-size="11" text-anchor="middle" font-family="Arial">خط العرض:</text>
-  <text x="144" y="130" fill="#fff" font-size="19" font-weight="bold" text-anchor="middle" font-family="monospace">26.626849°</text>
-  <text x="144" y="158" fill="#7ec8ff" font-size="11" text-anchor="middle" font-family="Arial">خط الطول:</text>
-  <text x="144" y="180" fill="#fff" font-size="19" font-weight="bold" text-anchor="middle" font-family="monospace">37.912589°</text>
-  <rect x="28" y="196" width="232" height="32" rx="5" fill="rgba(26,115,232,0.2)" stroke="rgba(26,115,232,0.4)" stroke-width="1"/>
-  <text x="144" y="212" fill="#7ec8ff" font-size="10" text-anchor="middle" font-family="Arial">✓ Google Earth | QGIS | GPS</text>
-  <text x="144" y="226" fill="#888" font-size="9" text-anchor="middle" font-family="Arial">الأكثر استخداماً في تقارير GIS</text>
-  <text x="284" y="170" fill="#555" font-size="22" text-anchor="middle">⇄</text>
-  <rect x="300" y="44" width="258" height="230" rx="10" fill="#1a3a1a" stroke="#589632" stroke-width="2"/>
-  <rect x="300" y="44" width="258" height="38" rx="10" fill="#589632"/>
-  <text x="429" y="60" fill="#fff" font-size="12" font-weight="bold" text-anchor="middle" font-family="Arial">الدرجات/الدقائق/الثواني</text>
-  <text x="429" y="76" fill="rgba(255,255,255,0.65)" font-size="9" text-anchor="middle" font-family="Arial">DMS — Degrees Minutes Seconds</text>
-  <text x="429" y="108" fill="#7ec8ff" font-size="11" text-anchor="middle" font-family="Arial">خط العرض:</text>
-  <text x="429" y="130" fill="#fff" font-size="15" font-weight="bold" text-anchor="middle" font-family="monospace">26° 37&#39; 36.66&#34; N</text>
-  <text x="429" y="158" fill="#7ec8ff" font-size="11" text-anchor="middle" font-family="Arial">خط الطول:</text>
-  <text x="429" y="180" fill="#fff" font-size="15" font-weight="bold" text-anchor="middle" font-family="monospace">37° 54&#39; 45.32&#34; E</text>
-  <rect x="313" y="196" width="232" height="32" rx="5" fill="rgba(88,150,50,0.2)" stroke="rgba(88,150,50,0.4)" stroke-width="1"/>
-  <text x="429" y="212" fill="#7ec8ff" font-size="10" text-anchor="middle" font-family="Arial">✓ الصكوك القديمة | المساحون</text>
-  <text x="429" y="226" fill="#888" font-size="9" text-anchor="middle" font-family="Arial">شائع في الوثائق الرسمية</text>
-  <text x="569" y="170" fill="#555" font-size="22" text-anchor="middle">⇄</text>
-  <rect x="585" y="44" width="258" height="230" rx="10" fill="#2a1f0a" stroke="#C9A84C" stroke-width="2"/>
-  <rect x="585" y="44" width="258" height="38" rx="10" fill="#C9A84C"/>
-  <text x="714" y="60" fill="#000" font-size="12" font-weight="bold" text-anchor="middle" font-family="Arial">نظام UTM</text>
-  <text x="714" y="76" fill="rgba(0,0,0,0.55)" font-size="9" text-anchor="middle" font-family="Arial">Universal Transverse Mercator</text>
-  <text x="714" y="105" fill="#E8C97A" font-size="10" text-anchor="middle" font-family="Arial">المنطقة (Zone):</text>
-  <text x="714" y="124" fill="#fff" font-size="20" font-weight="bold" text-anchor="middle" font-family="monospace">37N</text>
-  <text x="714" y="152" fill="#E8C97A" font-size="10" text-anchor="middle" font-family="Arial">شرق (Easting):</text>
-  <text x="714" y="170" fill="#fff" font-size="15" font-weight="bold" text-anchor="middle" font-family="monospace">553,420 م</text>
-  <text x="714" y="190" fill="#E8C97A" font-size="10" text-anchor="middle" font-family="Arial">شمال (Northing):</text>
-  <text x="714" y="208" fill="#fff" font-size="15" font-weight="bold" text-anchor="middle" font-family="monospace">2,946,890 م</text>
-  <rect x="598" y="218" width="232" height="32" rx="5" fill="rgba(201,168,76,0.15)" stroke="rgba(201,168,76,0.4)" stroke-width="1"/>
-  <text x="714" y="234" fill="#E8C97A" font-size="10" text-anchor="middle" font-family="Arial">✓ مشاريع هندسية | هيئة جغرافية</text>
-  <text x="714" y="248" fill="#888" font-size="9" text-anchor="middle" font-family="Arial">دقيق للمسافات والمساحات الكبيرة</text>
-</svg>
-    <div class="ss-cap">نفس موقع العُلا بثلاث صيغ — استخدم DD في تقاريرك الإلكترونية | DMS قد تجده في الصكوك | UTM في المشاريع الهندسية</div>
-  </div>
-
-  <div class="stitle"><div class="sdot"></div>متى تستخدم أيّ صيغة؟</div>
-  <div class="tbl-wrap">
-    <table>
-      <thead><tr><th>الصيغة</th><th>مثال فعلي — العُلا</th><th>أين تجدها</th><th>في تقارير التقييم</th></tr></thead>
-      <tbody>
-        <tr><td><strong>DD (درجات عشرية)</strong></td><td><code>26.626849, 37.912589</code></td><td>Google Earth, GPS, التطبيقات الحديثة</td><td>✓ <strong>استخدمها دائماً</strong> في تقاريرك</td></tr>
-        <tr><td><strong>DMS (درجات/دقائق/ثوانٍ)</strong></td><td><code>26°37'36"N, 37°54'45"E</code></td><td>بعض الصكوك القديمة والمساحون</td><td>حوّلها لـ DD قبل الإدراج في التقرير</td></tr>
-        <tr><td><strong>UTM (متري)</strong></td><td><code>Zone 37N: 553420E, 2946890N</code></td><td>مشاريع الهيئة الجغرافية، بعض SHP</td><td>يُستخدم في المشاريع الهندسية الكبيرة</td></tr>
-      </tbody>
-    </table>
-  </div>
-
-  <div class="info gold">
-    <h4>🔄 تحويل DMS إلى DD — الطريقة اليدوية</h4>
-    <ul>
-      <li>المعادلة: <code>DD = الدرجات + (الدقائق ÷ 60) + (الثواني ÷ 3600)</code></li>
-      <li>مثال: <code>26°37'36"N</code> = 26 + (37÷60) + (36÷3600) = 26 + 0.6167 + 0.01 = <strong>26.6267°</strong></li>
-      <li>تحويل تلقائي: <code>mygeodata.cloud</code> أو انقر يمين على الموقع في Google Earth ← Copy</li>
-      <li>في QGIS: <code>View → Coordinate Capture</code> يعرض الإحداثيات بأي صيغة تختارها</li>
-    </ul>
-  </div>
-
-  <div class="stitle"><div class="sdot"></div>نظام الإسقاط (CRS) — لماذا مهم؟</div>
-  <p class="prose">نظام الإسقاط هو الطريقة الرياضية لتحويل كرة الأرض إلى خريطة مسطحة. اختيار نظام إسقاط مختلف يعني إحداثيات مختلفة لنفس الموقع — لهذا يجب دائماً توحيد نظام الإسقاط عند العمل مع ملفات متعددة.</p>
-
-  <div class="tbl-wrap">
-    <table>
-      <thead><tr><th>نظام الإسقاط</th><th>الكود</th><th>متى يُستخدم</th><th>التوصية</th></tr></thead>
-      <tbody>
-        <tr><td><strong>WGS84</strong></td><td>EPSG:4326</td><td>GPS، Google Earth، الإنترنت، تقارير GIS</td><td>✓ <strong>استخدمه دائماً</strong> في تقاريرك</td></tr>
-        <tr><td><strong>UTM Zone 37N</strong></td><td>EPSG:32637</td><td>وسط السعودية، المنطقة الغربية</td><td>للمشاريع الهندسية في هذه المناطق</td></tr>
-        <tr><td><strong>UTM Zone 38N</strong></td><td>EPSG:32638</td><td>شرق السعودية والخليج</td><td>مشاريع أرامكو وشرق المملكة</td></tr>
-        <tr><td><strong>Web Mercator</strong></td><td>EPSG:3857</td><td>Google Maps، خرائط الويب</td><td>⚠ للعرض فقط — لا تقِس به المساحات</td></tr>
-      </tbody>
-    </table>
-  </div>
-  <div class="tip"><p>💡 القاعدة الذهبية: <strong>WGS84 (EPSG:4326)</strong> هو المعيار للتقارير العقارية في السعودية — يضمن توافق بياناتك مع Google Earth وصحاري وأي نظام آخر.</p></div>
-
-
-  <div class="exercise">
-    <div class="ex-hdr"><h4>⚙️  تمرين: تثبيت البرامج قبل الجلسة الأولى</h4></div>
-    <div class="ex-steps">
-      <div class="step"><div class="snum">1</div><p>حمّل Google Earth Pro من <code>earth.google.com/download</code> — اختر "Desktop"</p></div>
-      <div class="step"><div class="snum">2</div><p>ثبّت البرنامج واختر اللغة العربية من الإعدادات إن أردت</p></div>
-      <div class="step"><div class="snum">3</div><p>حمّل QGIS من <code>qgis.org/download</code> — اختر الإصدار المستقر <code>LTR</code></p></div>
-      <div class="step"><div class="snum">4</div><p>افتح Google Earth Pro وتأكد من ظهور الخريطة. جرّب البحث عن "الرياض"</p></div>
-      <div class="step"><div class="snum">5</div><p>افتح QGIS وتأكد من ظهور الواجهة دون أخطاء. لا تحتاج إعداداً إضافياً الآن</p></div>
-      <div class="step"><div class="snum">6</div><p>سجّل أي مشكلة واجهتها لمناقشتها في الجلسة الجماعية</p></div>
-    </div>
-  </div>
-  <div class="tip"><p>💡 لو واجهت مشكلة في التثبيت — ابحث في يوتيوب: اسم البرنامج + "install windows 2024" أو "تثبيت". غالباً تجد الحل في دقيقتين.</p></div>
 </div>
 
 <div class="section" id="s4">
-  <div class="sec-hdr">
-    <div class="sec-hdr-row"><div class="sec-num">٢</div><h2>Google Earth Pro للتقييم العقاري</h2></div>
-    <div class="sec-chips"><div class="chip">⏱ 2 ساعة</div><div class="chip ge">Google Earth</div><div class="chip">📅 الأسبوع الأول</div></div>
-  </div>
+  <div class="sec-hdr"><div class="sec-hdr-row"><div class="sec-num">٢</div><h2>Google Earth Pro للتقييم العقاري</h2></div></div>
+  <p class="prose">شرح لواجهة البرنامج، استخدام الصور التاريخية، وقياس المساحات بدقة تقديرية (97%).</p>
+</div>
 
-  <p class="prose">Google Earth Pro هو نقطة البداية لكل مقيّم. سهل، سريع، ومجاني. في هذه الوحدة ستتعلم كل ما تحتاجه لاستخدامه بشكل احترافي في عملك اليومي.</p>
+<div class="section" id="s5">
+  <div class="sec-hdr"><div class="sec-hdr-row"><div class="sec-num">٣</div><h2>التعامل مع ملفات KMZ و KML</h2></div></div>
+  <p class="prose">محتوى هذه الوحدة يركز على استيراد وتصدير الملفات الجغرافية، والفرق بين الطبقات المدمجة والمفصلة.</p>
+</div>
 
-  <div class="stitle"><div class="sdot"></div>واجهة البرنامج — دليل الأجزاء الرئيسية</div>
-  <div class="ss-wrap">
-    <div class="ss-bar"><div class="d r"></div>
-    <svg onclick="openOv(this)" viewBox="0 0 860 460" xmlns="http://www.w3.org/2000/svg">
-  <rect width="860" height="460" fill="#404040"/>
-  <rect x="0" y="0" width="860" height="26" fill="#2d2d2d"/>
-  <text x="10" y="17" fill="#ccc" font-size="10" font-family="Arial">Layout  Edit  View  Atlas  Add Item  Settings  Help</text>
-  <rect x="0" y="26" width="40" height="434" fill="#353535"/>
-  <text x="20" y="60" fill="#aaa" font-size="16" text-anchor="middle">↔</text>
-  <text x="20" y="90" fill="#aaa" font-size="14" text-anchor="middle">📄</text>
-  <text x="20" y="120" fill="#aaa" font-size="14" text-anchor="middle">🗺</text>
-  <text x="20" y="150" fill="#aaa" font-size="14" text-anchor="middle">📏</text>
-  <text x="20" y="180" fill="#aaa" font-size="14" text-anchor="middle">↑N</text>
-  <text x="20" y="210" fill="#aaa" font-size="14" text-anchor="middle">T</text>
-  <rect x="50" y="36" width="640" height="410" fill="#888" rx="2"/>
-  <rect x="56" y="42" width="628" height="398" fill="white" rx="1"/>
-  <rect x="70" y="56" width="420" height="310" fill="#3a7a28" stroke="#333" stroke-width="1"/>
-  <g stroke="#FFD700" stroke-width="1" fill="rgba(255,200,0,0.2)">
-    <polygon points="140,100 220,92 228,160 148,168"/>
-    <polygon points="228,92 300,88 306,155 228,160"/>
-    <polygon points="148,168 228,160 232,228 150,234"/>
-    <polygon points="228,160 306,155 310,222 232,228"/>
-    <polygon points="100,180 148,168 150,234 102,240"/>
-    <polygon points="306,88 370,85 374,150 306,155"/>
-  </g>
-  <rect x="78" y="330" width="100" height="10" fill="rgba(0,0,0,0.5)" rx="2"/>
-  <rect x="81" y="333" width="40" height="4" fill="white"/>
-  <rect x="121" y="333" width="40" height="4" fill="#333"/>
-  <text x="130" y="352" fill="#333" font-size="9" font-family="Arial" text-anchor="middle">0   500م</text>
-  <rect x="455" y="62" width="40" height="50" fill="white" stroke="#ccc" stroke-width="1" rx="3"/>
-  <text x="475" y="85" fill="#333" font-size="20" text-anchor="middle">↑</text>
-  <text x="475" y="102" fill="#333" font-size="10" text-anchor="middle" font-weight="bold">N</text>
-  <rect x="70" y="370" width="420" height="58" fill="#f5f5f5" stroke="#ddd" stroke-width="1"/>
-  <text x="280" y="393" fill="#1B3A5C" font-size="13" font-weight="bold" text-anchor="middle" font-family="Arial">خريطة الأراضي المتأثرة — محافظة العُلا</text>
-  <text x="280" y="413" fill="#666" font-size="10" text-anchor="middle" font-family="Arial">Value Experts  |  WGS84  |  المقياس 1:10,000  |  2025</text>
-  <rect x="506" y="100" width="160" height="170" fill="white" stroke="#ddd" stroke-width="1" rx="3"/>
-  <text x="586" y="118" fill="#333" font-size="11" font-weight="bold" text-anchor="middle" font-family="Arial">المفتاح</text>
-  <rect x="516" y="128" width="14" height="12" fill="rgba(255,200,0,0.5)" stroke="#FFD700" stroke-width="1"/>
-  <text x="536" y="139" fill="#333" font-size="9" font-family="Arial">أراضي متأثرة</text>
-  <rect x="516" y="148" width="14" height="12" fill="rgba(26,115,232,0.5)" stroke="#1a73e8" stroke-width="1"/>
-  <text x="536" y="159" fill="#333" font-size="9" font-family="Arial">Old Town Expropriation</text>
-  <rect x="516" y="168" width="14" height="12" fill="rgba(88,150,50,0.5)" stroke="#589632" stroke-width="1"/>
-  <text x="536" y="179" fill="#333" font-size="9" font-family="Arial">زراعي</text>
-  <rect x="516" y="188" width="14" height="12" fill="rgba(220,38,38,0.5)" stroke="#dc2626" stroke-width="1"/>
-  <text x="536" y="199" fill="#333" font-size="9" font-family="Arial">سكني</text>
-  <rect x="516" y="208" width="14" height="12" fill="rgba(201,168,76,0.5)" stroke="#C9A84C" stroke-width="1"/>
-  <text x="536" y="219" fill="#333" font-size="9" font-family="Arial">تراثي</text>
-  <rect x="700" y="26" width="160" height="434" fill="#2d2d2d"/>
-  <rect x="700" y="26" width="160" height="24" fill="#252525"/>
-  <text x="780" y="42" fill="#7ec8ff" font-size="10" text-anchor="middle" font-family="Arial">Item Properties</text>
-  <text x="710" y="68" fill="#888" font-size="9" font-family="Arial">نوع: Map Frame</text>
-  <text x="710" y="84" fill="#888" font-size="9" font-family="Arial">المقياس: 1:10,000</text>
-  <text x="710" y="100" fill="#888" font-size="9" font-family="Arial">العرض: 420mm</text>
-  <text x="710" y="116" fill="#888" font-size="9" font-family="Arial">الارتفاع: 310mm</text>
-  <rect x="708" y="124" width="100" height="18" rx="3" fill="#1a73e8"/>
-  <text x="758" y="136" fill="#fff" font-size="9" text-anchor="middle" font-family="Arial">تحديث المعاينة</text>
-  <rect x="708" y="420" width="60" height="22" rx="3" fill="#589632"/>
-  <text x="738" y="434" fill="#fff" font-size="9" text-anchor="middle" font-family="Arial">PDF ↓</text>
-  <rect x="774" y="420" width="60" height="22" rx="3" fill="#555"/>
-  <text x="804" y="434" fill="#fff" font-size="9" text-anchor="middle" font-family="Arial">PNG ↓</text>
-</svg>
-    <div class="ss-cap">QGIS Print Layout — خريطة موقع احترافية مع مقياس رسم واتجاه شمال ومفتاح الألوان</div>
-  </div>
-  </div>
+<div class="section" id="s6">
+  <div class="sec-hdr"><div class="sec-hdr-row"><div class="sec-num">٤</div><h2>مقدمة QGIS للمستخدم العقاري</h2></div></div>
+  <p class="prose">واجهة المستخدم، إضافة خرائط الأساس (Basemaps)، وإدارة الطبقات في QGIS.</p>
+</div>
 
-  <div class="exercise">
-    <div class="ex-hdr"><h4>🖨️  تمرين: إنشاء تقرير موقع احترافي PDF</h4></div>
-    <div class="ex-steps">
-      <div class="step"><div class="snum">1</div><p>من قائمة <code>Project → New Print Layout</code> — أعطِه اسم المشروع</p></div>
-      <div class="step"><div class="snum">2</div><p>حدد حجم الورق A4 واتجاهه Landscape من <code>Layout → Page Setup</code></p></div>
-      <div class="step"><div class="snum">3</div><p>أضف الخريطة: <code>Add Item → Add Map</code> ثم ارسم مستطيلاً على الصفحة</p></div>
-      <div class="step"><div class="snum">4</div><p>في Item Properties اضبط المقياس يدوياً لتظهر المنطقة بشكل مناسب</p></div>
-      <div class="step"><div class="snum">5</div><p>أضف مقياس الرسم: <code>Add Item → Add Scale Bar</code></p></div>
-      <div class="step"><div class="snum">6</div><p>أضف اتجاه الشمال: <code>Add Item → Add North Arrow</code></p></div>
-      <div class="step"><div class="snum">7</div><p>أضف عنوان: <code>Add Item → Add Label</code> — اكتب اسم العقار والتاريخ</p></div>
-      <div class="step"><div class="snum">8</div><p>صدّر النتيجة: <code>Layout → Export as PDF</code> أو <code>Export as Image</code></p></div>
-    </div>
-  </div>
-
-  <div class="stitle"><div class="sdot"></div>القالب المعياري لبيانات الموقع في التقرير</div>
-  <div class="tbl-wrap">
-    <table>
-      <thead><tr><th>البيان</th><th>القيمة</th></tr></thead>
-      <tbody>
-        <tr><td>خط العرض (Latitude)</td><td style="color:#94A3B8;font-style:italic">يُكمل من البرنامج</td></tr>
-        <tr><td>خط الطول (Longitude)</td><td style="color:#94A3B8;font-style:italic">يُكمل من البرنامج</td></tr>
-        <tr><td>المساحة الفعلية (م²)</td><td style="color:#94A3B8;font-style:italic">يُكمل من البرنامج</td></tr>
-        <tr><td>المساحة في الصك (م²)</td><td style="color:#94A3B8;font-style:italic">من المستندات الرسمية</td></tr>
-        <tr><td>فرق المساحة (%)</td><td style="color:#94A3B8;font-style:italic">يُحسب: ((فعلي - صك) / صك) × 100</td></tr>
-        <tr><td>أبعاد الأرض</td><td style="color:#94A3B8;font-style:italic">يُكمل من البرنامج</td></tr>
-        <tr><td>المسافة لأقرب طريق رئيسي (م)</td><td style="color:#94A3B8;font-style:italic">يُكمل من البرنامج</td></tr>
-        <tr><td>اتجاه الواجهة الرئيسية</td><td style="color:#94A3B8;font-style:italic">شمال / جنوب / شرق / غرب</td></tr>
-        <tr><td>نظام الإسقاط المستخدم</td><td><strong>WGS84 / EPSG:4326</strong></td></tr>
-        <tr><td>مصدر بيانات الموقع</td><td><strong>Google Earth Pro / ملف KMZ رسمي</strong></td></tr>
-      </tbody>
-    </table>
-  </div>
-  <div class="tip"><p>💡 احفظ قالب Print Layout بعد أول مرة تنجزه. كل عقار لاحق يحتاج فقط تغيير الملف — دون إعادة التصميم من الصفر.</p></div>
+<div class="section" id="s7">
+  <div class="sec-hdr"><div class="sec-hdr-row"><div class="sec-num">٥</div><h2>ربط GIS بتقارير التقييم</h2></div></div>
+  <p class="prose">إنشاء Print Layout، إضافة مفتاح الخريطة، اتجاه الشمال، ومقياس الرسم لإنتاج تقرير PDF رسمي.</p>
 </div>
 
 <div class="section" id="s8">
@@ -957,343 +528,78 @@ tbody td:first-child{font-weight:700;color:var(--navy);background:#FAFBFC;border
     <div class="sec-hdr-row"><div class="sec-num">٦</div><h2>التمارين العملية ومشروع التخرج</h2></div>
     <div class="sec-chips"><div class="chip">⏱ 2 ساعة</div><div class="chip">📅 الأسبوع الثالث</div></div>
   </div>
-
-  <div class="stitle"><div class="sdot"></div>التمرين الأول — التحقق من صحة بيانات الصك</div>
-  <div class="exercise">
-    <div class="ex-hdr"><h4>📄  التحقق من مساحة العقار مقارنة بالصك</h4></div>
-    <div class="ex-steps">
-      <div class="step"><div class="snum">1</div><p>خذ صكاً لعقار حقيقي (أرض سكنية أو عمارة)</p></div>
-      <div class="step"><div class="snum">2</div><p>ابحث عن العقار في Google Earth بالعنوان أو الإحداثيات</p></div>
-      <div class="step"><div class="snum">3</div><p>قِس مساحته الفعلية بأداة Polygon Ruler وسجّل الرقم</p></div>
-      <div class="step"><div class="snum">4</div><p>احسب نسبة الفرق: <code>((مساحة فعلية - مساحة الصك) ÷ مساحة الصك) × 100</code></p></div>
-      <div class="step"><div class="snum">5</div><p>إذا كان الفرق أكثر من 5% — ما الاحتمالات؟ ناقشها مع المجموعة</p></div>
-      <div class="step"><div class="snum">6</div><p>أخرج صورة موقع بالإعدادات الصحيحة جاهزة للتقرير</p></div>
-    </div>
-  </div>
-
-  <div class="stitle"><div class="sdot"></div>التمرين الثاني — تحليل الموقع النسبي للعقار</div>
-  <div class="exercise">
-    <div class="ex-hdr"><h4>📍  وصف محيط العقار وتأثيره على القيمة</h4></div>
-    <div class="ex-steps">
-      <div class="step"><div class="snum">1</div><p>اختر عقاراً تجارياً في أي حي بالرياض</p></div>
-      <div class="step"><div class="snum">2</div><p>قِس المسافة بالمتر لأقرب طريق رئيسي (عرض ≥ 30م)</p></div>
-      <div class="step"><div class="snum">3</div><p>قِس المسافة لأقرب مدرسة ومركز تجاري وحديقة عامة</p></div>
-      <div class="step"><div class="snum">4</div><p>سجّل جميع النتائج في جدول Excel</p></div>
-      <div class="step"><div class="snum">5</div><p>اكتب فقرة "وصف الموقع" جاهزة للتقرير — 3-4 أسطر تصف الموقع بدقة</p></div>
-      <div class="step"><div class="snum">6</div><p>ناقش مع المجموعة: كيف تؤثر هذه المسافات على قيمة العقار؟</p></div>
-    </div>
-  </div>
-
-  <div class="stitle"><div class="sdot"></div>التمرين الثالث — فتح ملف KMZ وتحليله في QGIS</div>
-  <div class="exercise">
-    <div class="ex-hdr"><h4>🔍  تحليل ملف GIS رسمي كاملاً</h4></div>
-    <div class="ex-steps">
-      <div class="step"><div class="snum">1</div><p>احصل على ملف KMZ من مشروع تقييمي سابق أو من المدرب</p></div>
-      <div class="step"><div class="snum">2</div><p>افتحه في Google Earth وتحقق من صحة الحدود بصرياً</p></div>
-      <div class="step"><div class="snum">3</div><p>انقله إلى QGIS وأضف طبقة جوية من QuickMapServices</p></div>
-      <div class="step"><div class="snum">4</div><p>افتح Attribute Table واستعرض البيانات المرفقة</p></div>
-      <div class="step"><div class="snum">5</div><p>أنشئ Print Layout كاملاً وصدّره PDF</p></div>
-      <div class="step"><div class="snum">6</div><p>قارن جودة مخرجاتك مع مخرجات زميلك</p></div>
-    </div>
-  </div>
-
-  <div class="stitle"><div class="sdot"></div>مشروع التخرج النهائي</div>
-  <div class="info blue">
-    <h4>🎓 متطلبات مشروع التخرج</h4>
-    <ul>
-      <li>اختر عقاراً فعلياً لم تعمل عليه سابقاً في هذا التدريب</li>
-      <li>أنجز تقرير موقع كامل: الإحداثيات، المساحة، الأبعاد، المرافق المحيطة</li>
-      <li>أرفق صورة جوية احترافية من QGIS Print Layout بصيغة PDF</li>
-      <li>قارن المساحة الفعلية بالمساحة في المستندات الرسمية واحسب الفرق</li>
-      <li>استخدم القالب المعياري من الوحدة الخامسة بالكامل</li>
-      <li>الوقت المخصص: 60 دقيقة مستقلة</li>
-    </ul>
-  </div>
-
-  <div class="stitle"><div class="sdot"></div>قائمة التحقق النهائية</div>
-  <div style="background:#fff;border-radius:var(--r);padding:20px;border:1px solid var(--gray2);">
-    <ul class="checklist" id="cl">
-      <li onclick="chk(this)"><input type="checkbox" id="chk-1"> تثبيت Google Earth Pro وتشغيله بنجاح</li>
-      <li onclick="chk(this)"><input type="checkbox" id="chk-2"> تثبيت QGIS وتشغيله بنجاح</li>
-      <li onclick="chk(this)"><input type="checkbox" id="chk-3"> قياس مساحة قطعة أرض بأداة Polygon Ruler</li>
-      <li onclick="chk(this)"><input type="checkbox" id="chk-4"> استخدام الصور التاريخية في Google Earth</li>
-      <li onclick="chk(this)"><input type="checkbox" id="chk-5"> فتح ملف KMZ في Google Earth وقراءة بياناته</li>
-      <li onclick="chk(this)"><input type="checkbox" id="chk-6"> تحويل Shapefile إلى KMZ عبر MyGeodata</li>
-      <li onclick="chk(this)"><input type="checkbox" id="chk-7"> استيراد KMZ في QGIS وإضافة طبقة جوية</li>
-      <li onclick="chk(this)"><input type="checkbox" id="chk-8"> إنشاء Print Layout كامل وتصديره PDF</li>
-      <li onclick="chk(this)"><input type="checkbox" id="chk-9"> إنجاز مشروع التخرج النهائي بنجاح</li>
-    </ul>
-  </div>
+  <p class="prose">تطبيق عملي للتحقق من صك عقار، ووصف النطاق المحيط، وتحليل ملف GIS كامل.</p>
 </div>
 
 <div class="section" id="s9">
   <div class="sec-hdr">
-    <div class="sec-hdr-row"><div class="sec-num">📌</div><h2>مثال حقيقي — مشروع الأراضي المتأثرة في العُلا</h2></div>
-    <div class="sec-chips">
-      <div class="chip">ملف KMZ فعلي</div>
-      <div class="chip">2,675 عقار</div>
-      <div class="chip">العُلا — المدينة المنورة</div>
-    </div>
+    <div class="sec-hdr-row"><div class="sec-num">٧</div><h2>التحليل المكاني المتقدم لدعم قرارات التقييم</h2></div>
+    <div class="sec-chips"><div class="chip">⏱ 2.5 ساعة</div><div class="chip">📅 الأسبوع الرابع</div><div class="chip qg">QGIS Advanced</div></div>
   </div>
 
-  <p class="prose">
-    هذا القسم يأخذك خطوة بخطوة عبر ملف KMZ حقيقي من مشروع تقييم فعلي.
-    الملف يحتوي على <strong>2,675 عقاراً</strong> متأثرة في منطقة العُلا
-    ضمن مبادرات التطوير والاستملاك من مختلف المشاريع. ستتعلم كيف تقرأ هذا
-    النوع من الملفات، وتفهم بنيانه، وتستخرج منه المعلومات اللازمة للتقرير.
-  </p>
+  <p class="prose">هذه الوحدة تنقلك من مرحلة "وصف الموقع" إلى مرحلة "صناعة القرار التقييمي". ستتعلم هنا كيف تستخدم QGIS للإجابة على أسئلة معقدة تؤثر مباشرة على القيمة السوقية للعقار وتدعم أرقامك في دراسات الجدوى.</p>
 
-  <div class="callout">
-    <div class="co-icon">⚠️</div>
-    <div>
-      <h4>لماذا الملف يُظهر 2,675 عقاراً وليس 2,600؟</h4>
-      <p>
-        الرقم الذي تراه في بعض المصادر (مثل ملف Excel المرافق) هو 6,200 عقار — لأن
-        Excel يفصل الطبقات ويعدّ كل طبقة (أراضي، مباني، مزارع) بشكل منفصل.
-        أما ملف KMZ فيعرض <strong>2,675 Placemark</strong> وهي العقارات الفريدة بعد دمج الطبقات.
-        هذا الفارق شائع جداً في مشاريع GIS الكبيرة — وهو مثال حي على أهمية فهم بنية الملف قبل العمل عليه.
-      </p>
-    </div>
-  </div>
+  <div class="stitle"><div class="sdot"></div>١. الخرائط الحرارية وتصنيف الأسعار (Thematic Maps)</div>
+  <p class="prose">بدلاً من إرفاق جدول Excel مليء بالأرقام في تقريرك، ستتعلم كيفية ربط ملف الصفقات العقارية بخريطة QGIS. يقوم البرنامج بتلوين قطع الأراضي تلقائياً بناءً على سعر المتر (مثلاً: تدرج من الأخضر للأحمر)، مما يمنح العميل والمستثمر تصوراً بصرياً فورياً للأسعار في المنطقة مقارنة بالعقار محل التقييم.</p>
 
-  <div class="stitle"><div class="sdot"></div>نظرة عامة على محتوى الملف</div>
+  <div class="stitle"><div class="sdot"></div>٢. تحليل النطاقات المكانية (Buffer Analysis)</div>
+  <p class="prose">تُستخدم هذه الأداة بكثرة في التقييم التجاري لدراسة "منطقة التجميع" (Catchment Area). يمكنك رسم نطاق قطره 3 كيلومترات حول المول أو الفندق الذي تقيّمه، ليقوم البرنامج تلقائياً بحصر الكثافة السكانية، أو المنافسين، أو عدد المواقف المتاحة داخل هذه الدائرة الجغرافية بالضبط.</p>
 
-  <div class="tbl-wrap">
-    <table>
-      <thead><tr><th>البيان</th><th>القيمة</th></tr></thead>
-      <tbody>
-        <tr><td><strong>اسم الملف</strong></td><td>Affected_Lands.kmz</td></tr>
-        <tr><td><strong>الحجم</strong></td><td>1.07 MB (مضغوط) — 10.6 MB بعد الفك)</td></tr>
-        <tr><td><strong>إجمالي العقارات</strong></td><td>2,675 Placemark</td></tr>
-        <tr><td><strong>عدد الطبقات</strong></td><td>طبقة واحدة: FeatureLayer0</td></tr>
-        <tr><td><strong>المنطقة الجغرافية</strong></td><td>محافظة العُلا — المدينة المنورة</td></tr>
-        <tr><td><strong>نظام الإسقاط</strong></td><td>WGS84 / EPSG:4326</td></tr>
-        <tr><td><strong>إجمالي المساحة</strong></td><td>22,807,762 م² (حوالي 2,281 هكتار)</td></tr>
-        <tr><td><strong>متوسط مساحة العقار</strong></td><td>8,526 م²</td></tr>
-        <tr><td><strong>أصغر عقار</strong></td><td>2.8 م²</td></tr>
-        <tr><td><strong>أكبر عقار</strong></td><td>1,450,080 م² (145 هكتار)</td></tr>
-      </tbody>
-    </table>
-  </div>
+  <div class="stitle"><div class="sdot"></div>٣. استخراج البيانات المفتوحة بضغطة زر (QuickOSM)</div>
+  <p class="prose">لن تضطر للبحث اليدوي عن المدارس أو المستشفيات المحيطة بالعقار لذكرها في التقرير. باستخدام إضافة <code>QuickOSM</code>، تستطيع سحب كافة نقاط الاهتمام (POIs) وشبكة الطرق من قاعدة بيانات OpenStreetMap المحدثة وإسقاطها كطبقات جاهزة فوق عقارك خلال ثوانٍ معدودة.</p>
 
-  <div class="stitle"><div class="sdot"></div>الحقول المتوفرة في كل عقار</div>
-  <p class="prose">كل Placemark في الملف يحتوي على جدول بيانات HTML مضمّن يتضمن 20 حقلاً. فيما يلي دليل الحقول وأهميتها لعمل التقييم:</p>
+  <div class="stitle"><div class="sdot"></div>٤. تقاطع الطبقات التنظيمية (Overlay & Zoning)</div>
+  <p class="prose">من أخطر أخطاء التقييم هو افتراض استخدام الأرض بناءً على ما يجاورها. تقنية "التقاطع" تسمح لك بوضع حدود العقار فوق "خريطة المخطط الاستراتيجي للمدينة" (كود البناء أو استخدامات الأراضي)، ليؤكد لك النظام برمجياً وبشكل قاطع ما إذا كان العقار سكنياً أم تجارياً أم خاضعاً لاشتراطات خاصة ترفع أو تخفض من قيمته.</p>
 
-  <div class="tbl-wrap">
-    <table>
-      <thead><tr><th>اسم الحقل</th><th>الوصف</th><th>أهميته للمقيّم</th></tr></thead>
-      <tbody>
-        <tr><td><code>Parcel_Number</code></td><td>رقم القطعة في المشروع</td><td>🔴 أساسي — مرجع التعريف الرئيسي</td></tr>
-        <tr><td><code>AREA_SQM</code></td><td>المساحة بالمتر المربع</td><td>🔴 أساسي — للتحقق من الصك</td></tr>
-        <tr><td><code>Land_Use</code></td><td>استخدام الأرض (سكني، زراعي، تراثي...)</td><td>🔴 أساسي — يؤثر على قيمة الاستملاك</td></tr>
-        <tr><td><code>OWNERSHIP</code></td><td>نوع الملكية: خاص أو حكومي</td><td>🔴 أساسي — يحدد إجراءات الاستملاك</td></tr>
-        <tr><td><code>District_Name_A</code></td><td>اسم الحي بالعربي</td><td>🟡 مهم — للتوثيق في التقرير</td></tr>
-        <tr><td><code>District_Name_E</code></td><td>اسم الحي بالإنجليزي</td><td>🟡 مهم — للتقارير الثنائية اللغة</td></tr>
-        <tr><td><code>Land_Category</code></td><td>تصنيف الأرض: مخططة / عشوائية</td><td>🟡 مهم — يؤثر على التقييم القانوني</td></tr>
-        <tr><td><code>Overlapped_Project_Name</code></td><td>اسم المشروع المتداخل مع العقار</td><td>🟡 مهم — يحدد الغرض من الاستملاك</td></tr>
-        <tr><td><code>Expropriation_Status</code></td><td>حالة الاستملاك السابق</td><td>🟡 مهم — لتجنب التكرار</td></tr>
-        <tr><td><code>Deed_Status</code></td><td>وجود صك ملكية</td><td>🟡 مهم — يؤثر على التعويض</td></tr>
-        <tr><td><code>Plan_Number</code></td><td>رقم المخطط التنظيمي</td><td>⚪ إضافي — للتحقق من البلدية</td></tr>
-        <tr><td><code>MP_BOUNDARY</code></td><td>حدود المخطط الرئيسي (MP1 أو MP2)</td><td>⚪ إضافي — للتصنيف الجغرافي</td></tr>
-        <tr><td><code>Land_Restrictions</code></td><td>القيود المفروضة على الأرض</td><td>⚪ إضافي — لكنه مهم قانونياً</td></tr>
-        <tr><td><code>Unique_Link_ID</code></td><td>معرف فريد للربط بقواعد البيانات</td><td>⚪ تقني — للربط مع Excel</td></tr>
-      </tbody>
-    </table>
-  </div>
+  <div class="stitle"><div class="sdot"></div>٥. تحليل الطبوغرافيا والارتفاعات (DEM)</div>
+  <p class="prose">عند تقييم الأراضي الخام والمساحات التنموية الكبيرة، يجب قراءة نماذج الارتفاعات الرقمية (Digital Elevation Models). ستتعلم كيف تُظهر الخريطة الميول الحادة ومجاري الأودية، وهي عوامل حاسمة تتطلب خصم "تكاليف القص والردم والتسوية" من القيمة السوقية الإجمالية للأرض.</p>
 
-  <div class="stitle"><div class="sdot"></div>تحليل توزيع العقارات</div>
-
-  <div class="tbl-wrap">
-    <table>
-      <thead><tr><th colspan="2">استخدام الأراضي (Land Use)</th><th colspan="2">نوع الملكية (Ownership)</th></tr></thead>
-      <tbody>
-        <tr><td><strong>Heritage Area (تراثي)</strong></td><td>912 &nbsp;(34.1%)</td><td><strong>Private (خاص)</strong></td><td>2,443 &nbsp;(91.3%)</td></tr>
-        <tr><td><strong>Residential (سكني)</strong></td><td>775 &nbsp;(29.0%)</td><td><strong>Government (حكومي)</strong></td><td>232 &nbsp;(8.7%)</td></tr>
-        <tr><td><strong>Agricultural (زراعي)</strong></td><td>431 &nbsp;(16.1%)</td><td colspan="2" rowspan="4"></td></tr>
-        <tr><td><strong>Industrial (صناعي)</strong></td><td>132 &nbsp;(4.9%)</td></tr>
-        <tr><td><strong>Empty (فضاء)</strong></td><td>120 &nbsp;(4.5%)</td></tr>
-        <tr><td><strong>Animal Activity (حيواني)</strong></td><td>107 &nbsp;(4.0%)</td></tr>
-        <tr><td><strong>أخرى (13 فئة)</strong></td><td>198 &nbsp;(7.4%)</td><td colspan="2"></td></tr>
-      </tbody>
-    </table>
-  </div>
-
-  <div class="tbl-wrap">
-    <table>
-      <thead><tr><th colspan="3">توزيع المشاريع (أكبر 10 مشاريع)</th></tr>
-      <tr><th>اسم المشروع</th><th>عدد العقارات</th><th>النسبة</th></tr></thead>
-      <tbody>
-        <tr><td><strong>Old Town Expropriation</strong></td><td>916</td><td>34.2%</td></tr>
-        <tr><td><strong>CPPA A10 Updated</strong></td><td>610</td><td>22.8%</td></tr>
-        <tr><td><strong>Road 01</strong></td><td>157</td><td>5.9%</td></tr>
-        <tr><td><strong>Productive Agriculture Farms</strong></td><td>96</td><td>3.6%</td></tr>
-        <tr><td><strong>Road 1</strong></td><td>91</td><td>3.4%</td></tr>
-        <tr><td><strong>Visual Enhancement Site 1</strong></td><td>71</td><td>2.7%</td></tr>
-        <tr><td><strong>Second Homes Qaraqir</strong></td><td>68</td><td>2.5%</td></tr>
-        <tr><td><strong>Ashar Valley</strong></td><td>66</td><td>2.5%</td></tr>
-        <tr><td><strong>AlUla South Support Services</strong></td><td>59</td><td>2.2%</td></tr>
-        <tr><td><strong>Nabataean Farms</strong></td><td>49</td><td>1.8%</td></tr>
-        <tr><td><strong>مشاريع أخرى (40 مشروع)</strong></td><td>492</td><td>18.4%</td></tr>
-      </tbody>
-    </table>
-  </div>
-
-  <div class="stitle"><div class="sdot"></div>نماذج حقيقية من العقارات داخل الملف</div>
-  <p class="prose">فيما يلي ثلاثة عقارات فعلية مستخرجة من الملف — بأنواع مختلفة — لتفهم كيف تبدو البيانات عند فتح أي Placemark:</p>
-
-  <div style="border-radius:var(--r);overflow:hidden;border:1px solid var(--gray2);margin-bottom:16px;">
-    <div style="background:var(--ge);padding:12px 18px;display:flex;align-items:center;gap:10px;">
-      <span style="font-size:18px">🏘️</span>
-      <span style="font-size:13px;font-weight:700;color:#fff;">عقار سكني — حي الجديدة</span>
-      <span style="margin-right:auto;background:rgba(255,255,255,.2);color:#fff;font-size:11px;padding:3px 10px;border-radius:20px;">Placemark ID_00000</span>
-    </div>
-    <div style="background:#fff;padding:0;">
-      <div class="tbl-wrap" style="margin:0;border:none;border-radius:0;">
-        <table>
-          <tbody>
-            <tr><td><strong>Parcel_Number</strong></td><td>855</td><td><strong>Land_Use</strong></td><td>Residential</td></tr>
-            <tr><td><strong>AREA_SQM</strong></td><td>67.49 م²</td><td><strong>OWNERSHIP</strong></td><td>Private</td></tr>
-            <tr><td><strong>District_Name_A</strong></td><td>حى الجديدة</td><td><strong>Land_Category</strong></td><td>Unplanned Informal Lands</td></tr>
-            <tr><td><strong>Overlapped_Project_Name</strong></td><td colspan="3">CPPA HUB 2 - A12</td></tr>
-            <tr><td><strong>الإحداثيات التقريبية</strong></td><td colspan="3">26.658622° N, 37.906245° E</td></tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-    <div style="background:#F8FAFC;padding:10px 16px;font-size:12px;color:var(--muted);border-top:1px solid var(--gray2);">
-      💡 <strong>ملاحظة للمقيّم:</strong> مساحة 67 م² صغيرة جداً لأرض سكنية — هذا يشير لقطعة داخل نسيج عمراني عشوائي غير مخطط. الاستملاك ضمن مشروع CPPA HUB 2.
-    </div>
-  </div>
-
-  <div style="border-radius:var(--r);overflow:hidden;border:1px solid var(--gray2);margin-bottom:16px;">
-    <div style="background:var(--qg);padding:12px 18px;display:flex;align-items:center;gap:10px;">
-      <span style="font-size:18px">🌾</span>
-      <span style="font-size:13px;font-weight:700;color:#fff;">عقار زراعي — حي المنشية</span>
-      <span style="margin-right:auto;background:rgba(255,255,255,.2);color:#fff;font-size:11px;padding:3px 10px;border-radius:20px;">Land_Use: Agricultural</span>
-    </div>
-    <div style="background:#fff;padding:0;">
-      <div class="tbl-wrap" style="margin:0;border:none;border-radius:0;">
-        <table>
-          <tbody>
-            <tr><td><strong>Land_Use</strong></td><td>Agricultural</td><td><strong>OWNERSHIP</strong></td><td>Private</td></tr>
-            <tr><td><strong>AREA_SQM</strong></td><td>17,943.92 م²</td><td><strong>Land_Category</strong></td><td>Unplanned Informal Lands</td></tr>
-            <tr><td><strong>District_Name_A</strong></td><td>حى المنشية</td><td><strong>Deed_Status</strong></td><td>NA</td></tr>
-            <tr><td><strong>Overlapped_Project_Name</strong></td><td colspan="3">Road 01</td></tr>
-            <tr><td><strong>الإحداثيات التقريبية</strong></td><td colspan="3">26.585189° N, 37.948108° E</td></tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-    <div style="background:#F8FAFC;padding:10px 16px;font-size:12px;color:var(--muted);border-top:1px solid var(--gray2);">
-      💡 <strong>ملاحظة للمقيّم:</strong> مزرعة بمساحة 1.8 هكتار، Deed_Status = NA يعني لا يوجد صك مسجل — هذا يُعقّد عملية التعويض ويستلزم توثيق الوضع القانوني أولاً.
-    </div>
-  </div>
-
-  <div style="border-radius:var(--r);overflow:hidden;border:1px solid var(--gray2);margin-bottom:24px;">
-    <div style="background:var(--navy);padding:12px 18px;display:flex;align-items:center;gap:10px;">
-      <span style="font-size:18px">🏛️</span>
-      <span style="font-size:13px;font-weight:700;color:#fff;">منطقة تراثية — حي الديرة</span>
-      <span style="margin-right:auto;background:rgba(255,255,255,.2);color:#fff;font-size:11px;padding:3px 10px;border-radius:20px;">Land_Use: Heritage Area</span>
-    </div>
-    <div style="background:#fff;padding:0;">
-      <div class="tbl-wrap" style="margin:0;border:none;border-radius:0;">
-        <table>
-          <tbody>
-            <tr><td><strong>Land_Use</strong></td><td>Heritage Area</td><td><strong>OWNERSHIP</strong></td><td>Government</td></tr>
-            <tr><td><strong>AREA_SQM</strong></td><td>20,282.71 م²</td><td><strong>Land_Category</strong></td><td>Unplanned Informal Lands</td></tr>
-            <tr><td><strong>District_Name_A</strong></td><td>حى الديرة</td><td><strong>MP_BOUNDARY</strong></td><td>MP1</td></tr>
-            <tr><td><strong>Overlapped_Project_Name</strong></td><td colspan="3">Old Town Expropriation</td></tr>
-            <tr><td><strong>الإحداثيات التقريبية</strong></td><td colspan="3">26.626849° N, 37.912589° E</td></tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-    <div style="background:#F8FAFC;padding:10px 16px;font-size:12px;color:var(--muted);border-top:1px solid var(--gray2);">
-      💡 <strong>ملاحظة للمقيّم:</strong> ملكية حكومية في المنطقة التراثية ضمن مشروع استملاك البلدة القديمة. الملكية الحكومية تعني إجراءات نقل مختلفة عن الملكية الخاصة.
-    </div>
-  </div>
-
-  <div class="stitle"><div class="sdot"></div>تمرين عملي: افتح الملف وتحقق بنفسك</div>
   <div class="exercise">
-    <div class="ex-hdr"><h4>📂  تمرين: قراءة ملف Affected_Lands.kmz خطوة بخطوة</h4></div>
+    <div class="ex-hdr"><h4>🚀 تمرين متقدم: دراسة الجدوى المكانية</h4></div>
     <div class="ex-steps">
-      <div class="step"><div class="snum">1</div><p>افتح Google Earth Pro واسحب ملف <code>Affected_Lands.kmz</code> عليه</p></div>
-      <div class="step"><div class="snum">2</div><p>سيظهر في لوحة Places — انقر مرتين على اسم الملف للانتقال لمنطقة العُلا تلقائياً</p></div>
-      <div class="step"><div class="snum">3</div><p>كبّر حتى ترى العقارات الفردية — كل مضلع = عقار واحد من الـ 2,675</p></div>
-      <div class="step"><div class="snum">4</div><p>انقر على أي عقار — ستظهر نافذة بجميع الـ 20 حقلاً: المساحة، الاستخدام، المشروع...</p></div>
-      <div class="step"><div class="snum">5</div><p>ابحث عن عقار بـ <code>Land_Use = Agricultural</code> وآخر بـ <code>Heritage Area</code> — لاحظ الفرق في المساحة</p></div>
-      <div class="step"><div class="snum">6</div><p>قِس مساحة أحد العقارات بأداة Polygon وقارنها بقيمة <code>AREA_SQM</code> في البيانات</p></div>
-      <div class="step"><div class="snum">7</div><p>الآن افتح الملف في QGIS — ستلاحظ أن Attribute Table يعرض جميع الـ 2,675 صفاً في جدول واحد قابل للتصفية والترتيب</p></div>
-      <div class="step"><div class="snum">8</div><p>في QGIS: انقر <code>View → Statistical Summary</code> واختر حقل <code>AREA_SQM</code> — ستظهر الإحصاءات الكاملة فوراً</p></div>
+      <div class="step"><div class="snum">1</div><p>استورد ملف Excel يحتوي على 50 صفقة عقارية لحي محدد في الرياض إلى QGIS.</p></div>
+      <div class="step"><div class="snum">2</div><p>اربط الإحداثيات وحوّل الجدول إلى طبقة نقاط (Point Layer).</p></div>
+      <div class="step"><div class="snum">3</div><p>استخدم <code>Symbology -> Graduated</code> لتلوين النقاط حسب عمود "سعر المتر".</p></div>
+      <div class="step"><div class="snum">4</div><p>استخدم إضافة <code>QuickOSM</code> لسحب جميع "الصيدليات" في ذلك الحي.</p></div>
+      <div class="step"><div class="snum">5</div><p>أداة <code>Buffer</code>: ارسم نطاق 500 متر حول موقع مشروع صيدلية جديدة، واحسب كم صيدلية منافسة تقع داخله.</p></div>
+      <div class="step"><div class="snum">6</div><p>صدّر النتيجة كخريطة تحليلية PDF لترفق كملحق في دراسة الجدوى.</p></div>
     </div>
   </div>
-
-  <div class="stitle"><div class="sdot"></div>الفرق الجوهري: Google Earth مقابل QGIS على هذا الملف</div>
-  <div class="tbl-wrap">
-    <table>
-      <thead><tr><th>المهمة</th><th class="ge-col">🌍 Google Earth</th><th class="qg-col">🧩 QGIS</th></tr></thead>
-      <tbody>
-        <tr><td>فتح الملف ورؤية العقارات</td><td><span class="ck">✔</span> فوري بالسحب والإفلات</td><td><span class="ck">✔</span> يعمل مع تحكم أكبر</td></tr>
-        <tr><td>النقر على عقار لرؤية بياناته</td><td><span class="ck">✔</span> نافذة HTML جميلة</td><td><span class="ck">✔</span> في Attribute Table</td></tr>
-        <tr><td>البحث عن عقار بالرقم</td><td><span class="cx">✗</span> يصعب جداً</td><td><span class="ck">✔</span> فلتر في ثوانٍ</td></tr>
-        <tr><td>عرض جميع الـ 2,675 عقاراً كجدول</td><td><span class="cx">✗</span> غير ممكن</td><td><span class="ck">✔</span> Attribute Table</td></tr>
-        <tr><td>تصفية: فقط العقارات الزراعية</td><td><span class="cx">✗</span></td><td><span class="ck">✔</span> Filter Expression</td></tr>
-        <tr><td>حساب مجموع مساحات مشروع معين</td><td><span class="cx">✗</span></td><td><span class="ck">✔</span> Field Calculator</td></tr>
-        <tr><td>تصدير عقارات مشروع واحد فقط</td><td><span class="cx">✗</span></td><td><span class="ck">✔</span> Export Filtered</td></tr>
-        <tr><td>إنتاج خريطة موقع للتقرير</td><td><span class="ck">✔</span> صورة بسيطة</td><td><span class="ck">✔</span> PDF احترافي</td></tr>
-      </tbody>
-    </table>
-  </div>
-
-  <div class="tip"><p>💡 <strong>الدرس من هذا المثال الحقيقي:</strong> Google Earth ممتاز للاستكشاف البصري والتحقق السريع. لكن حين تحتاج تعمل على 2,675 عقاراً — تصفية، تحليل، إحصاء، تقارير — QGIS هو الأداة الوحيدة العملية.</p></div>
 </div>
 
 <div class="section" id="s10">
   <div class="sec-hdr">
+    <div class="sec-hdr-row"><div class="sec-num">📌</div><h2>مثال حقيقي — مشروع الأراضي المتأثرة في العُلا</h2></div>
+    <div class="sec-chips"><div class="chip">ملف KMZ فعلي</div><div class="chip">2,675 عقار</div></div>
+  </div>
+  <p class="prose">تطبيق شامل لفتح ملف KMZ لمشروع استملاك ضخم في العُلا، وكيفية قراءة جداول البيانات المرفقة بكل عقار وتحليلها لاستخراج المعلومات الضرورية للتعويضات.</p>
+</div>
+
+<div class="section" id="s11">
+  <div class="sec-hdr">
     <div class="sec-hdr-row"><div class="sec-num">✅</div><h2>التقييم والشهادة</h2></div>
-    <div class="sec-chips"><div class="chip">📅 نهاية الأسبوع الثالث</div></div>
+    <div class="sec-chips"><div class="chip">📅 نهاية التدريب</div></div>
   </div>
 
-  <div class="stitle"><div class="sdot"></div>نصائح الاحترافيين — 8 نصيحة تختصر عليك وقتاً</div>
-  <div class="tips-grid">
-    <div class="tip-card"><span style="font-size:22px">📅</span><div><h4>تحقق دائماً من تاريخ الصورة</h4><p>أسفل شاشة Google Earth يظهر تاريخ الصورة. إذا كانت قديمة قد تكون المنطقة تغيرت — لا تعتمد عليها دون التحقق.</p></div></div>
-    <div class="tip-card"><span style="font-size:22px">💾</span><div><h4>احفظ مشروع QGIS لكل تقييم</h4><p>احفظ ملف المشروع (.qgz) وأعد استخدامه. كل مشروع جديد يحتاج فقط استبدال الملفات دون إعادة الإعداد.</p></div></div>
-    <div class="tip-card"><span style="font-size:22px">📐</span><div><h4>مساحة Google Earth تقديرية</h4><p>دقتها 95-98% للأراضي الكبيرة. للتقارير الرسمية استخدم المصادر الرسمية كصحاري أو الهيئة الجغرافية.</p></div></div>
-    <div class="tip-card"><span style="font-size:22px">🔄</span><div><h4>لا تحوّل الملفات دون سبب</h4><p>التحويل من Shapefile لـ KMZ قد يُفقد بعض البيانات. ابقَ على الصيغة الأصلية وافتح مباشرة في QGIS.</p></div></div>
-    <div class="tip-card"><span style="font-size:22px">⏳</span><div><h4>الصور التاريخية تكشف النزاعات</h4><p>Historical Imagery تكشف إذا تمددت أرض مجاورة على حدود العقار تاريخياً — مفيد جداً في تقارير النزاع.</p></div></div>
-    <div class="tip-card"><span style="font-size:22px">🖨️</span><div><h4>قالب Print Layout يوفر 80% من الوقت</h4><p>بعد إنشاء أول Print Layout احفظه كقالب. كل تقرير لاحق يحتاج تغيير الملف فقط — التصميم ثابت.</p></div></div>
-    <div class="tip-card"><span style="font-size:22px">📍</span><div><h4>WGS84 هو نظام الإسقاط الأساسي</h4><p>عند نقل الإحداثيات من Google Earth لـ QGIS تأكد من اختيار WGS84 / EPSG:4326 لضمان تطابق النتائج.</p></div></div>
-    <div class="tip-card"><span style="font-size:22px">⚡</span><div><h4>الجمع بينهما هو المهارة الحقيقية</h4><p>المقيّم المتقدم يستكشف في Google Earth أولاً، ثم يسحب الملف لـ QGIS للتحليل وإنتاج التقرير. الأداتان معاً = قوة كاملة.</p></div></div>
-  </div>
-
-  <div class="stitle"><div class="sdot"></div>جدول تقييم المهارات</div>
-  <div class="tbl-wrap">
-    <table>
-      <thead><tr><th>المهارة</th><th>المستوى</th><th>كيفية التقييم</th></tr></thead>
-      <tbody>
-        <tr><td>فتح ملفات KMZ وعرض الطبقات</td><td><span class="badge req">أساسي إلزامي</span></td><td>اختبار عملي مباشر</td></tr>
-        <tr><td>قياس المساحات والمسافات</td><td><span class="badge req">أساسي إلزامي</span></td><td>تمرين على ملف فعلي</td></tr>
-        <tr><td>استخراج الإحداثيات</td><td><span class="badge req">أساسي إلزامي</span></td><td>تمرين إدخال بيانات</td></tr>
-        <tr><td>تصدير صورة الموقع للتقرير</td><td><span class="badge req">أساسي إلزامي</span></td><td>نموذج تقرير</td></tr>
-        <tr><td>استخدام الصور التاريخية</td><td><span class="badge req">أساسي إلزامي</span></td><td>سؤال تطبيقي</td></tr>
-        <tr><td>ربط الموقع بمخططات البلدية</td><td><span class="badge mid">متوسط مرغوب</span></td><td>تمرين مقارنة</td></tr>
-        <tr><td>تحديد المرافق والطرق المحيطة</td><td><span class="badge mid">متوسط مرغوب</span></td><td>تقرير موقع كامل</td></tr>
-        <tr><td>إنشاء Print Layout في QGIS</td><td><span class="badge mid">متوسط مرغوب</span></td><td>تسليم PDF</td></tr>
-        <tr><td>استيراد Shapefile في QGIS</td><td><span class="badge opt">متقدم اختياري</span></td><td>مشروع نهائي</td></tr>
-        <tr><td>ربط Excel بالخريطة في QGIS</td><td><span class="badge opt">متقدم اختياري</span></td><td>مشروع متقدم</td></tr>
-      </tbody>
-    </table>
+  <div class="stitle"><div class="sdot"></div>قائمة التحقق النهائية للتدريب</div>
+  <div style="background:#fff;border-radius:var(--r);padding:20px;border:1px solid var(--gray2);margin-bottom:24px;">
+    <ul class="checklist" id="cl">
+      <li onclick="chk(this)"><input type="checkbox" id="chk-1"> تثبيت البرامج وتشغيلها بنجاح</li>
+      <li onclick="chk(this)"><input type="checkbox" id="chk-2"> قياس المساحات والتعامل مع الصور التاريخية في Google Earth</li>
+      <li onclick="chk(this)"><input type="checkbox" id="chk-3"> إنشاء وتصدير Print Layout احترافي من QGIS</li>
+      <li onclick="chk(this)"><input type="checkbox" id="chk-4"> <strong>[متقدم]</strong> إنشاء خريطة حرارية لتصنيف أسعار الصفقات</li>
+      <li onclick="chk(this)"><input type="checkbox" id="chk-5"> <strong>[متقدم]</strong> تحليل النطاقات (Buffer) لاستخراج المنافسين</li>
+      <li onclick="chk(this)"><input type="checkbox" id="chk-6"> اجتياز مشروع التخرج ومناقشة الحالة الدراسية</li>
+    </ul>
   </div>
 
   <div class="stitle"><div class="sdot"></div>تقدم الفريق</div>
   <div class="prog-wrap">
     <h3>الوحدات المكتملة</h3>
-    <div class="prog-item"><div class="prog-row"><div class="prog-label">الوحدة الأولى — المقدمة والأدوات</div><div class="prog-pct" id="pp1">0%</div></div><div class="prog-bar"><div class="prog-fill" id="pf1" style="width:0%"></div></div></div>
-    <div class="prog-item"><div class="prog-row"><div class="prog-label">الوحدة الثانية — Google Earth Pro</div><div class="prog-pct" id="pp2">0%</div></div><div class="prog-bar"><div class="prog-fill" id="pf2" style="width:0%"></div></div></div>
-    <div class="prog-item"><div class="prog-row"><div class="prog-label">الوحدة الثالثة — ملفات KMZ</div><div class="prog-pct" id="pp3">0%</div></div><div class="prog-bar"><div class="prog-fill" id="pf3" style="width:0%"></div></div></div>
-    <div class="prog-item"><div class="prog-row"><div class="prog-label">الوحدة الرابعة — QGIS</div><div class="prog-pct" id="pp4">0%</div></div><div class="prog-bar"><div class="prog-fill" id="pf4" style="width:0%"></div></div></div>
-    <div class="prog-item"><div class="prog-row"><div class="prog-label">الوحدة الخامسة — التقارير</div><div class="prog-pct" id="pp5">0%</div></div><div class="prog-bar"><div class="prog-fill" id="pf5" style="width:0%"></div></div></div>
-    <div class="prog-item"><div class="prog-row"><div class="prog-label">الوحدة السادسة — مشروع التخرج</div><div class="prog-pct" id="pp6">0%</div></div><div class="prog-bar"><div class="prog-fill" id="pf6" style="width:0%"></div></div></div>
+    <div class="prog-item"><div class="prog-row"><div class="prog-label">الوحدة ١ + ٢ — الأساسيات</div><div class="prog-pct" id="pp1">0%</div></div><div class="prog-bar"><div class="prog-fill" id="pf1" style="width:0%"></div></div></div>
+    <div class="prog-item"><div class="prog-row"><div class="prog-label">الوحدة ٣ + ٤ — ملفات GIS</div><div class="prog-pct" id="pp2">0%</div></div><div class="prog-bar"><div class="prog-fill" id="pf2" style="width:0%"></div></div></div>
+    <div class="prog-item"><div class="prog-row"><div class="prog-label">الوحدة ٥ + ٦ — التقارير والمشروع</div><div class="prog-pct" id="pp3">0%</div></div><div class="prog-bar"><div class="prog-fill" id="pf3" style="width:0%"></div></div></div>
+    <div class="prog-item"><div class="prog-row"><div class="prog-label">الوحدة ٧ — التحليل المتقدم</div><div class="prog-pct" id="pp4">0%</div></div><div class="prog-bar"><div class="prog-fill" id="pf4" style="width:0%"></div></div></div>
     <div style="margin-top:14px;text-align:center;">
       <button onclick="simProg()" style="background:var(--navy);color:#fff;border:none;padding:9px 22px;border-radius:8px;font-family:'Cairo',sans-serif;font-size:12px;font-weight:700;cursor:pointer;">محاكاة اكتمال التدريب</button>
     </div>
@@ -1304,21 +610,19 @@ tbody td:first-child{font-weight:700;color:var(--navy);background:#FAFBFC;border
       <div style="font-size:38px;margin-bottom:10px">🏅</div>
       <h3>شهادة إتمام التدريب</h3>
       <div class="cert-div"></div>
-      <p>يُمنح الموظف شهادة إتمام داخلية بعد اجتياز مشروع التخرج<br>واجتياز اختبار المهارات الأساسية الإلزامية بنجاح</p>
+      <p>يُمنح الموظف شهادة إتمام داخلية بعد اجتياز مشروع التخرج<br>وتطبيق مهارات التحليل المكاني لعمليات التقييم بنجاح</p>
       <div class="cert-org">Value Experts  |  قسم التدريب والتطوير</div>
     </div>
   </div>
 </div>
 
 </div></div><script>
-// التنقل بين الأقسام
 function show(n){
   document.querySelectorAll('.section').forEach((s,i)=>s.classList.toggle('active',i===n));
   document.querySelectorAll('.nav-item').forEach((b,i)=>b.classList.toggle('active',i===n));
   document.querySelector('.content').scrollTo({top:0,behavior:'smooth'});
 }
 
-// عرض وتكبير الرسومات (SVG)
 function openOv(el){
   document.getElementById('ov-content').innerHTML = el.outerHTML;
   document.getElementById('ov').classList.add('show');
@@ -1328,13 +632,11 @@ function closeOv(){
   setTimeout(() => document.getElementById('ov-content').innerHTML = '', 300);
 }
 
-// حفظ تقدم قائمة التحقق
 function saveProgress() {
   const checks = Array.from(document.querySelectorAll('.checklist input[type="checkbox"]')).map(cb => cb.checked);
   localStorage.setItem('ve_gis_checklist', JSON.stringify(checks));
 }
 
-// تحميل تقدم قائمة التحقق
 function loadProgress() {
   const saved = JSON.parse(localStorage.getItem('ve_gis_checklist'));
   if (saved) {
@@ -1346,32 +648,27 @@ function loadProgress() {
       }
     });
   }
-  // استعادة محاكاة التدريب إن تم الضغط عليها مسبقاً
   if (localStorage.getItem('ve_gis_sim') === 'true') simProg(false);
 }
 
-// تفعيل وتحديث قائمة التحقق
 function chk(li){
   const cb = li.querySelector('input');
-  // منع النقر المزدوج إذا تم الضغط على المربع نفسه
   if (event.target !== cb) cb.checked = !cb.checked;
   li.classList.toggle('done', cb.checked);
   saveProgress();
 }
 
-// محاكاة تقدم التدريب (النسب المئوية)
 function simProg(save = true){
-  const vals=[100,100,100,80,60,40];
-  [1,2,3,4,5,6].forEach((i,idx)=>{
+  const vals=[100,100,80,40];
+  [1,2,3,4].forEach((i,idx)=>{
     setTimeout(()=>{
       document.getElementById('pf'+i).style.width = vals[idx]+'%';
       document.getElementById('pp'+i).textContent = vals[idx]+'%';
-    }, save ? idx * 150 : 0); // أنيميشن فقط عند النقر اليدوي
+    }, save ? idx * 200 : 0);
   });
   if(save) localStorage.setItem('ve_gis_sim', 'true');
 }
 
-// استدعاء البيانات المحفوظة عند فتح الصفحة
 document.addEventListener('DOMContentLoaded', loadProgress);
 </script>
 </body>
